@@ -1,0 +1,45 @@
+
+.maquettePhone_Acceil,
+.maquettePhone_laPaletteDuGout,
+.maquettePhone_laNoteEnchantee,
+.maquettePhone_aLaFrancaise,
+.maquettePhone_leDeliceDesSens {
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    
+    width: 375px;
+   
+ /* ====================== */
+    opacity: 60%;
+ /* ====================== */
+}
+
+.maquettePhone_Acceil {
+    background-image: url("../../Cahier des Charges/Accueil.png");
+    height: 2263px;
+}
+
+.maquettePhone_laPaletteDuGout {
+    background-image: url("../../Cahier des Charges/Menu - La palette du goût.png");
+    height: 1641px;
+}
+
+.maquettePhone_laNoteEnchantee {
+    background-image: url("../../Cahier des Charges/Menu - La note enchantée.png");
+    height: 1753px;
+}
+
+.maquettePhone_aLaFrancaise {
+    background-image: url("../../Cahier des Charges/Menu - À la française.png");
+    height: 1676px;
+}
+
+.maquettePhone_leDeliceDesSens {
+    background-image: url("../../Cahier des Charges/Menu - Le délice des sens.png");
+    height: 1676px;
+}

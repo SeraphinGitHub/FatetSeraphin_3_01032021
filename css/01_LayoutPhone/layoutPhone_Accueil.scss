@@ -1,0 +1,98 @@
+
+@import "../_colors";
+@import "../_mixins";
+
+
+/* ============================================================================================================= */
+/* 			----  Smartphone Portrait ---- */
+/* ============================================================================================================= */
+
+body {
+	@include body;
+}
+
+header {
+	@include header;
+}
+
+/* ============================================================================================================= */
+/* 			----  EXPLORE  ---- */
+/* ============================================================================================================= */
+
+.explore {
+	@include flexStart_Y(100%);
+	// background-color: darkturquoise;
+	
+	height:337px;
+	
+	.location {
+		@include flexStart_Y(100%);
+		background-color: $explore_MediumGrey;
+		height: 15%;
+
+		.gradient{
+			height: 5px;
+			width: 100%;
+			background: linear-gradient(to bottom, $explore_DarkGrey, $explore_MediumGrey);
+		}
+
+		figure {
+			@include flexBetween_X(140px);
+			@include icons;
+			@include h3;
+			margin-top: 12px;
+			margin-right: 30px;
+		}
+	}
+
+	.booking {
+		@include flexStart_Y(100%);
+		background-color: $explore_ClearGrey;
+		height: 85%;
+
+		h2 {
+			@include booking(100%, 38px, -15px);
+		}
+
+		p {
+			@include booking(100%, 12px, 6px);
+		}
+		
+
+		a {
+			@include flexCenter(220px);
+			@include p_Regular;
+			background: linear-gradient(to bottom right, $secondaryColor, $primaryColor);
+			text-decoration: none;
+			color: $textColor_Clear;
+			
+			height: 50px;
+
+			margin-top: 31px;
+			margin-left: 6px;
+			
+			border-radius: 50px;
+		}
+	}
+}
+
+.fonctionnement {
+	@include flexCenter(100%);
+	// background-color: darkviolet;
+	
+	height:440px;
+}
+
+.restaurants {
+	@include flexCenter(100%);
+	// background-color: darkturquoise;
+	
+	height:1226px;
+}
+
+footer {
+	@include flexCenter(100%);
+	// background-color: darkviolet;
+	
+	height:197px;
+}
