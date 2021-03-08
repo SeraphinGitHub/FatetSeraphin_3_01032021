@@ -35,7 +35,7 @@ header h1 {
 }
 
 /* ============================================================================================================= */
-/* 			----  EXPLORE  ---- */
+/* 			----  Explore  ---- */
 /* ============================================================================================================= */
 .explore {
   display: -webkit-box;
@@ -82,11 +82,13 @@ header h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 140px;
   font-size: 100%;
-  margin: 0px;
+  margin: 0%;
+  margin-right: 0%;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 800;
@@ -111,6 +113,16 @@ header h1 {
   width: 100%;
   background-color: whitesmoke;
   height: 85%;
+}
+
+.explore .booking a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+.explore .booking a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
 }
 
 .explore .booking h2 {
@@ -142,23 +154,125 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 220px;
+  height: 50px;
+  border-radius: 50px;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 400;
   font-size: 100%;
   margin: 0px;
   padding: 0px;
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   text-decoration: none;
   color: white;
-  height: 50px;
   margin-top: 31px;
   margin-left: 6px;
-  border-radius: 50px;
 }
 
+.explore .booking a :hover {
+  color: black;
+}
+
+/* ============================================================================================================= */
+/* 			----  Fonctionnement  ---- */
+/* ============================================================================================================= */
 .fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  height: 440px;
+}
+
+.fonctionnement h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 47px;
+  margin-left: 5%;
+  margin-bottom: 25px;
+}
+
+.fonctionnement .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  height: 275px;
+}
+
+.fonctionnement .buttons a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+.fonctionnement .buttons a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+.fonctionnement .buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 86%;
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 800;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 97%;
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+  height: 73px;
+  margin-left: 12px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+.fonctionnement .buttons a h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,10 +282,62 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 440px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+  font-weight: 400;
+  background-color: #9356DC;
+  color: white;
+  margin-top: 6px;
+  margin-left: -11px;
 }
 
+.fonctionnement .buttons a .mobile {
+  margin: 0px;
+  padding: 0px;
+  font-size: 120%;
+  margin: 7%;
+  margin-right: 8%;
+}
+
+.fonctionnement .buttons a .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  margin: 6%;
+}
+
+.fonctionnement .buttons a .menu .menu_Dots {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+}
+
+.fonctionnement .buttons a .menu .menu_Bars {
+  margin: 0px;
+  padding: 0px;
+  font-size: 120%;
+}
+
+.fonctionnement .buttons a .store {
+  margin: 0px;
+  padding: 0px;
+  font-size: 110%;
+  margin: 7%;
+  margin-right: 6%;
+  color: #9356DC;
+}
+
+/* ============================================================================================================= */
+/* 			----  Restaurans  ---- */
+/* ============================================================================================================= */
 .restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +352,9 @@ header h1 {
   height: 1226px;
 }
 
+/* ============================================================================================================= */
+/* 			----  Footer  ---- */
+/* ============================================================================================================= */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,7 +1,8 @@
 
-@mixin icons {
-    font-size: 100%;
-    margin: 0px;
+@mixin icons($size, $margin, $marginRight) {
+    font-size: $size;
+    margin: $margin;
+    margin-right: $marginRight;
 }
 
 
@@ -52,7 +53,7 @@
 @mixin flexBetween_X($width) {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     width: $width;
 }
 
@@ -66,6 +67,16 @@
 }
 
 
+@mixin flexStart_X($width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: $width;
+}
+
+
 @mixin flexStart_Y($width) {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +85,27 @@
     width: $width;
 }
 
+
+@mixin circle($height) {
+    height:$height;
+    border-radius: $height;
+}
+
+
+@mixin boxShadow {
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+
+@mixin anchor {
+    a:hover {
+        box-shadow: 5px 5px 5px grey;
+    }
+
+    a:active {
+        box-shadow: 5px 5px 5px black;
+    }
+}
 
 @mixin h2 {
     font-family: "Roboto-Black";
@@ -113,3 +145,4 @@
 
     @include resetPos;
 }
+
