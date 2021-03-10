@@ -14,26 +14,6 @@ body {
   padding: 0px;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  width: 100%;
-  height: 63px;
-  color: black;
-}
-
-header h1 {
-  margin-top: 11px;
-}
-
 /* ============================================================================================================= */
 /* 			----  Explore  ---- */
 /* ============================================================================================================= */
@@ -85,16 +65,20 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
   font-size: 100%;
-  margin: 0%;
-  margin-right: 0%;
+  margin-left: 0%;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 800;
   font-size: 100%;
   margin: 0px;
   padding: 0px;
+  width: 140px;
+  position: unset;
   margin-top: 12px;
   margin-right: 30px;
 }
@@ -113,6 +97,11 @@ header h1 {
   width: 100%;
   background-color: whitesmoke;
   height: 85%;
+}
+
+.explore .booking a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
 }
 
 .explore .booking a:hover {
@@ -153,7 +142,7 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 220px;
+  width: 100%;
   height: 50px;
   border-radius: 50px;
   font-family: "Roboto-Regular";
@@ -162,8 +151,7 @@ header h1 {
   font-size: 100%;
   margin: 0px;
   padding: 0px;
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
+  width: 220px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   text-decoration: none;
@@ -229,6 +217,11 @@ header h1 {
   height: 275px;
 }
 
+.fonctionnement .buttons a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+}
+
 .fonctionnement .buttons a:hover {
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
@@ -253,22 +246,21 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 86%;
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 800;
   font-size: 100%;
   margin: 0px;
   padding: 0px;
+  width: 86%;
   font-size: 97%;
   text-decoration: none;
   color: black;
   background-color: whitesmoke;
   height: 73px;
   margin-left: 12px;
-  border-radius: 20px;
   margin-top: 6px;
 }
 
@@ -282,22 +274,25 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 23px;
+  width: 100%;
   height: 23px;
   border-radius: 23px;
+  width: 23px;
   font-weight: 400;
   background-color: #9356DC;
   color: white;
   margin-top: 6px;
   margin-left: -11px;
+  margin-right: 18.5%;
 }
 
 .fonctionnement .buttons a .mobile {
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 9%;
   font-size: 120%;
-  margin: 7%;
-  margin-right: 8%;
 }
 
 .fonctionnement .buttons a .menu {
@@ -310,28 +305,38 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   width: 24px;
-  margin: 6%;
+  position: absolute;
+  margin-left: 8.5%;
 }
 
 .fonctionnement .buttons a .menu .menu_Dots {
   margin: 0px;
   padding: 0px;
+  position: absolute;
   font-size: 100%;
+  margin-left: 0%;
+  position: unset;
 }
 
 .fonctionnement .buttons a .menu .menu_Bars {
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 0%;
   font-size: 120%;
+  position: unset;
 }
 
 .fonctionnement .buttons a .store {
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 9%;
   font-size: 110%;
-  margin: 7%;
-  margin-right: 6%;
   color: #9356DC;
 }
 
@@ -342,30 +347,178 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   width: 100%;
+  background-color: whitesmoke;
   height: 1226px;
 }
 
-/* ============================================================================================================= */
-/* 			----  Footer  ---- */
-/* ============================================================================================================= */
-footer {
+.restaurants h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 197px;
+  margin-top: 53px;
+  margin-left: 5%;
+  margin-bottom: 23px;
+}
+
+.restaurants .resto_Thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  height: 1058px;
+}
+
+.restaurants .resto_Thumbnails a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+}
+
+.restaurants .resto_Thumbnails a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+.restaurants .resto_Thumbnails a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+.restaurants .resto_Thumbnails a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 174px;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  width: 100%;
+  height: 77px;
+  border-radius: 0px 0px 15px 15px;
+  position: absolute;
+  margin-top: 174px;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails figcaption .figText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  font-family: "Roboto-Black";
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 150%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 55%;
+  margin-left: 4%;
+  font-size: 112%;
+  color: black;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails figcaption .figText p {
+  font-size: 95%;
+  width: 100%;
+}
+
+.restaurants .resto_Thumbnails a .thumbnails figcaption .heart {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 0%;
+  font-size: 160%;
+  position: unset;
+  margin-top: -6px;
+  margin-right: 7%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+}
+
+.restaurants .resto_Thumbnails a .thumbnails figcaption .heart .far {
+  color: black;
 }
 /*# sourceMappingURL=layoutPhone_Accueil.css.map */

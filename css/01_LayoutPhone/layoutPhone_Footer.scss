@@ -1,0 +1,62 @@
+
+@import "../_colors";
+@import "../_mixins";
+
+
+/* ============================================================================================================= */
+/* 			----  Smartphone Portrait ---- */
+/* 
+/* 					----  Footer  ---- */
+/* ============================================================================================================= */
+
+footer {
+	@include flexStart_Y;
+	justify-content: flex-start;
+	background-color: $footerColor;
+	
+	height:197px;
+
+	h1 {
+		width: 100%;
+		margin-top: 28px;
+		margin-left: 6.5%;
+		color: $textColor_Clear;
+		font-size: 112%;
+	}
+	
+	ul {
+		margin-top: 16px;
+		margin-left: 6.5%;
+		padding: 0%;
+			
+		li {
+			@include flexBetween_X;
+			@include p_Regular;
+			list-style: none;
+			line-height: 164%;
+			width: 100%;
+			color: $textColor_Clear;
+			
+			a {
+				text-decoration: none;
+				color: $textColor_Clear;
+			}
+
+			.dishes, .handshake {
+				@include icons(0%);
+				margin-top: -3px;
+				margin-left: -20px;
+				font-size: 80%;
+				color: $textColor_Clear;
+			}
+			
+			.handshake {
+				transform: rotate(-45deg);
+			}
+		}
+
+		.iconsList {
+			margin-left: 13%;
+		}
+	}
+}

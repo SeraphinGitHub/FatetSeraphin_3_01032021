@@ -1,0 +1,87 @@
+/* ============================================================================================================= */
+/* 			----  Smartphone Portrait ---- */
+/* 
+/* 					----  Footer  ---- */
+/* ============================================================================================================= */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #232323;
+  height: 197px;
+}
+
+footer h1 {
+  width: 100%;
+  margin-top: 28px;
+  margin-left: 6.5%;
+  color: white;
+  font-size: 112%;
+}
+
+footer ul {
+  margin-top: 16px;
+  margin-left: 6.5%;
+  padding: 0%;
+}
+
+footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  line-height: 164%;
+  width: 100%;
+  color: white;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li .dishes, footer ul li .handshake {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 0%;
+  margin-top: -3px;
+  margin-left: -20px;
+  font-size: 80%;
+  color: white;
+}
+
+footer ul li .handshake {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+footer ul .iconsList {
+  margin-left: 13%;
+}
+/*# sourceMappingURL=layoutPhone_Footer.css.map */

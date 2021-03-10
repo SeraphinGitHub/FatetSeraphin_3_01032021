@@ -7,19 +7,21 @@
 		
         <title>OhMyFood - Accueil</title>
 		
-		<link rel="stylesheet" type="text/css" href="../css/01_LayoutPhone/layoutPhone_Accueil.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/01_LayoutPhone/layoutPhone_Accueil.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/01_LayoutPhone/layoutPhone_Header.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/01_LayoutPhone/layoutPhone_Footer.css" media="screen"/>
 		
-		<!-- <link rel="stylesheet" type="text/css" href="../css/02_LayoutTabletSmall/layoutTabletSmall_Accueil.css" media="screen"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/02_LayoutTabletSmall/layoutTabletSmall_Accueil.css" media="screen"/> -->
 		
-		<!-- <link rel="stylesheet" type="text/css" href="../css/03_LayoutTabletBig/layoutTabletBig_Accueil.css" media="screen"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/03_LayoutTabletBig/layoutTabletBig_Accueil.css" media="screen"/> -->
 		
-		<!-- <link rel="stylesheet" type="text/css" href="../css/04_LayoutDesktop/layoutDesktop_Accueil.css" media="screen"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/04_LayoutDesktop/layoutDesktop_Accueil.css" media="screen"/> -->
 			
-		<link rel="stylesheet" type="text/css" href="../css/fonts.css" media="screen"/>
-		<link rel="stylesheet" type="text/css" href="../css/all.min.css" media="screen"/>
-		<link rel="stylesheet" type="text/css" href="../css/W3C_Validator.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/all.min.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/W3C_Validator.css" media="screen"/>
 			
-		<link rel="stylesheet" type="text/css" href="../css/maquettes/maquettePhone.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/maquettes/maquettePhone.css" media="screen"/>
 	</head>
 	
 	<body>
@@ -106,46 +108,87 @@
 
 		<section class="restaurants">
 
-			<h3>Restaurants</h3>
+			<h2>Restaurants</h2>
 
-			<div>
+			<div class="resto_Thumbnails">
+				
 				<a href="laPaletteDuGout.html">
-					<figure>
-						<img   style="width: 200px"   src="../images/restaurants/laPaletteDuGout.jpg" alt="restaurant's meal">
+					<figure class="thumbnails">
+
+						<img src="images/restaurants/laPaletteDuGout.jpg" alt="restaurant's meal">
 
 						<figcaption>
-							laPaletteDuGout
+							<div class="figText">
+								La palette du goût
+	
+								<p>Ménilmontant</p>
+							</div>
+
+							<figure class="heart">
+								<i class="far fa-heart"></i>
+							</figure>
 						</figcaption>
+
 					</figure>
 				</a>
 
 				<a href="laNoteEnchantee.html">
-					<figure>
-						<img   style="width: 200px"   src="../images/restaurants/laNoteEnchantee.jpg" alt="restaurant's meal">
+					<figure class="thumbnails">
+
+						<img src="images/restaurants/laNoteEnchantee.jpg" alt="restaurant's meal">
 
 						<figcaption>
-							laNoteEnchantee
+							<div class="figText">
+								La note enchantée
+								
+								<p>Charonne</p>
+							</div>
+
+							<figure class="heart">
+								<i class="far fa-heart"></i>
+							</figure>
 						</figcaption>
+
 					</figure>
 				</a>
 
 				<a href="aLaFrancaise.html">
-					<figure>
-						<img   style="width: 200px"   src="../images/restaurants/aLaFrancaise.jpg" alt="restaurant's meal">
+					<figure class="thumbnails">
+
+						<img src="images/restaurants/aLaFrancaise.jpg" alt="restaurant's meal">
 
 						<figcaption>
-							aLaFrancaise
+							<div class="figText">
+								À la française
+
+								<p>Cité Rouge</p>
+							</div>
+
+							<figure class="heart">
+								<i class="far fa-heart"></i>
+							</figure>							
 						</figcaption>
+
 					</figure>
 				</a>
 
 				<a href="leDeliceDesSens.html">
-					<figure>
-						<img   style="width: 200px"   src="../images/restaurants/leDeliceDesSens.jpg" alt="restaurant's meal">
+					<figure class="thumbnails">
+
+						<img src="images/restaurants/leDeliceDesSens.jpg" alt="restaurant's meal">
 
 						<figcaption>
-							leDeliceDesSens
+							<div class="figText">
+								Le délice des sens
+	
+								<p>Folie-Méricourt</p>
+							</div>
+
+							<figure class="heart">
+								<i class="far fa-heart"></i>
+							</figure>						
 						</figcaption>
+
 					</figure>
 				</a>
 			</div>
@@ -157,17 +200,17 @@
 			<h1>ohmyfood</h1>
 			
 			<ul>
-				<li>
-					<figure>
-						<i class=""></i>
+				<li class="iconsList">
+					<figure class="dishes">
+						<i class="fas fa-utensils"></i>
 					</figure>
 					
 					Proposer un restaurant
 				</li>
 					
-				<li>
-					<figure>
-						<i class=""></i>
+				<li class="iconsList">
+					<figure class="handshake">
+						<i class="fas fa-handshake"></i>
 					</figure>
 						
 					Devenir partenaire
@@ -177,6 +220,6 @@
 
 				<li><a href="mailto:">Contact</a></li>
 			</ul>
-			
+
 		</footer>
 	</body>

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAKA,mHAAmH;AACnH,uCAAuC;AACvC;2BAC2B;AAC3B,mHAAmH;AAGnH,AAAA,MAAM,CAAC;EEVH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,IAAI;EFSX,MAAM,EAAE,IAAI;EACZ,KAAK,ECdQ,KAAK;CDmBrB;;AARD,AAKI,MALE,CAKF,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "layoutPhone_Header.scss",
+        "../_colors.scss",
+        "../_mixins.scss"
+    ],
+    "names": [],
+    "file": "layoutPhone_Header.css"
+}
