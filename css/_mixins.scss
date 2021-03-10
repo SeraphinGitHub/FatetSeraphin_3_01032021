@@ -1,7 +1,7 @@
 
-@mixin icons($size, $margin, $marginRight) {
+@mixin icons($size, $marginLeft, $marginRight) {
     font-size: $size;
-    margin: $margin;
+    margin-left: $marginLeft;
     margin-right: $marginRight;
 }
 
