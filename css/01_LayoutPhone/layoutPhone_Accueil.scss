@@ -57,19 +57,11 @@ body {
 		
 		
 		a {
-			@include flexCenter;
-			@include circleEdges(50px);
-			@include p_Regular;
-			width: 220px;
-			background: linear-gradient(to bottom right, $secondaryColor, $primaryColor);
-			text-decoration: none;
-			color: $textColor_Clear;
-			margin-top: 31px;
-			margin-left: 6px;
+			@include grad_Button(220px, 31px, 6px);
+		}
 
-			:hover {
-				color: black;
-			}
+		a:hover, a:active {
+			color: $onHover_onClick;
 		}
 	}
 }
@@ -204,32 +196,12 @@ body {
 					// opacity: 50%;
 					
 					.figText {
-						@include flexBetween_Y;
 						@include h2;
-						justify-content: flex-start;
-						height: 55%;
-						margin-left: 4%;
-						font-size: 112%;
-						color: $textColor_Dark;
-
-						p {
-							font-size: 95%;
-							width: 100%;
-						}
+						@include figText(55%, 4%, 112%);
 					}
 					
 					.heart {
-						@include icons(0%);
-						font-size: 160%;
-						position: unset;
-						margin-top: -6px;
-						margin-right: 7%;
-						background: linear-gradient(to top, $secondaryColor, $primaryColor);
-						
-						.far {
-							// position: absolute;
-							color: $textColor_Dark;
-						}
+						@include heart(-6px, 7%);
 					}
 				}
 			}

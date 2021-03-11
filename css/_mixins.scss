@@ -153,3 +153,46 @@
 	margin-top: $marginTop;
     margin-left: $marginLeft;
 }
+
+
+@mixin grad_Button($width, $marginTop, $marginLeft) {
+    @include flexCenter;
+    @include circleEdges(50px);
+    @include p_Regular;
+    width: $width;
+    background: linear-gradient(to bottom right, $secondaryColor, $primaryColor);
+    text-decoration: none;
+    color: $textColor_Clear;
+    margin-top: $marginTop;
+    margin-left: $marginLeft;
+}
+
+
+@mixin figText($height, $marginLeft, $fontSize) {
+    @include flexBetween_Y;
+	justify-content: flex-start;
+	height: $height;
+	margin-left: $marginLeft;
+	font-size: $fontSize;
+	color: $textColor_Dark;
+
+	p {
+		font-size: 95%;
+		width: 100%;
+	}
+}
+
+
+@mixin heart($marginTop, $marginRight) {
+    @include icons(0%);
+	font-size: 160%;
+	position: unset;
+	margin-top: $marginTop;
+	margin-right: $marginRight;
+	background: linear-gradient(to top, $secondaryColor, $primaryColor);
+						
+	.far {
+		// position: absolute;
+		color: $textColor_Dark;
+	}
+}

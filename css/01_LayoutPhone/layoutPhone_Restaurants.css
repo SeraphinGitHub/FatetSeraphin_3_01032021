@@ -1,0 +1,276 @@
+/* ============================================================================================================= */
+/* 			----  Smartphone Portrait ---- */
+/* ============================================================================================================= */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ============================================================================================================= */
+/* 			----  Main Section  ---- */
+/* ============================================================================================================= */
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+}
+
+section .head_Photo {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 275px;
+}
+
+section .head_Photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -55px;
+  height: 1160px;
+  background-color: #e9e9e9;
+}
+
+section .menu a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+}
+
+section .menu a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+section .menu a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+section .menu .name_resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 39px;
+}
+
+section .menu .name_resto h1 {
+  font-size: 175%;
+  margin-left: 5px;
+}
+
+section .menu .name_resto .heart {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 0%;
+  font-size: 160%;
+  position: unset;
+  margin-top: -6px;
+  margin-right: 5.5%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+}
+
+section .menu .name_resto .heart .far {
+  color: black;
+}
+
+section .menu .entrees, section .menu .plats, section .menu .desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 93%;
+  margin-top: 35px;
+}
+
+section .menu .entrees .title, section .menu .plats .title, section .menu .desserts .title {
+  width: 40px;
+  font-size: 100%;
+  margin-left: 2%;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+section .menu .entrees .choice, section .menu .plats .choice, section .menu .desserts .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  height: 232px;
+  margin-top: 14px;
+}
+
+section .menu .entrees .choice a, section .menu .plats .choice a, section .menu .desserts .choice a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+}
+
+section .menu .entrees .choice a:hover, section .menu .plats .choice a:hover, section .menu .desserts .choice a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+section .menu .entrees .choice a:active, section .menu .plats .choice a:active, section .menu .desserts .choice a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+section .menu .entrees .choice a, section .menu .plats .choice a, section .menu .desserts .choice a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: black;
+  height: 68px;
+  background-color: white;
+}
+
+section .menu .entrees .choice a .figText, section .menu .plats .choice a .figText, section .menu .desserts .choice a .figText {
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 800;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 62%;
+  margin-left: 3%;
+  font-size: 108%;
+  color: black;
+}
+
+section .menu .entrees .choice a .figText p, section .menu .plats .choice a .figText p, section .menu .desserts .choice a .figText p {
+  font-size: 95%;
+  width: 100%;
+}
+
+section .menu .entrees .choice a .figText p, section .menu .plats .choice a .figText p, section .menu .desserts .choice a .figText p {
+  font-size: 89%;
+}
+
+section .menu .entrees .choice a .price, section .menu .plats .choice a .price, section .menu .desserts .choice a .price {
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 800;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+section .menu .command {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 186px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  text-decoration: none;
+  color: white;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+section .menu .command:hover, section .menu .command:active {
+  color: black;
+}
+
+section .menu .desserts, section .menu .command {
+  margin-top: 48px;
+}
+/*# sourceMappingURL=layoutPhone_Restaurants.css.map */

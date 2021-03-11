@@ -3,6 +3,19 @@
 /* 			
 /*					----  Header ---- */
 /* ============================================================================================================= */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +29,36 @@ header {
   width: 100%;
   height: 63px;
   color: black;
+}
+
+header .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: -83%;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 130%;
+  margin-top: 5px;
+  color: black;
+  width: 40px;
+}
+
+header .arrow:hover, header .arrow:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  border: 2px solid black;
 }
 
 header h1 {

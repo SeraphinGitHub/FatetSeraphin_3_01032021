@@ -9,6 +9,10 @@
 /* 					----  Footer  ---- */
 /* ============================================================================================================= */
 
+body {
+	@include body;
+}
+
 footer {
 	@include flexStart_Y;
 	justify-content: flex-start;

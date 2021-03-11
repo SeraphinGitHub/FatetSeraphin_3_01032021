@@ -1,0 +1,112 @@
+
+@import "../_colors";
+@import "../_mixins";
+
+
+/* ============================================================================================================= */
+/* 			----  Smartphone Portrait ---- */
+/* ============================================================================================================= */
+
+body {
+	@include body;
+}
+
+
+/* ============================================================================================================= */
+/* 			----  Main Section  ---- */
+/* ============================================================================================================= */
+section {
+	@include flexBetween_Y;
+
+	.head_Photo {
+		@include resetPos;
+		@include fig(275px);
+
+		img {
+			@include fig(100%);
+			object-fit: cover;
+		}
+	}
+
+	.menu {
+		@include flexStart_Y;
+		@include radiusCorner(40px, 0px);
+		@include anchor;
+		margin-top: -55px;
+		height: 1160px;
+		background-color: $explore_MediumGrey;
+		// background-color: darkturquoise;
+
+		.name_resto {
+			@include flexBetween_X;
+			justify-content: space-around;
+			margin-top: 39px;
+
+			h1 {
+				font-size: 175%;
+				margin-left: 5px;
+			}
+
+			.heart {
+				@include heart(-6px, 5.5%);
+			}
+		}
+
+		.entrees, .plats, .desserts {
+			@include flexBetween_Y;
+			justify-content: flex-start;
+			width: 93%;
+			margin-top: 35px;
+
+			.title {
+				width: 40px;
+				font-size: 100%;
+				margin-left: 2%;
+				padding-bottom: 5px;
+				border-bottom: 3px solid $tertiaryColor;
+			}
+
+			.choice {
+				@include flexBetween_Y;
+				@include anchor;
+				height: 232px;
+				margin-top: 14px;
+				
+				a {
+					@include flexBetween_X;
+					@include radiusCorner(15px, 15px);
+					text-decoration: none;
+					color: $textColor_Dark;
+					height: 68px;
+					background-color: $resto_Thumbnails;
+					
+					.figText {
+						@include h3;
+						@include figText(62%, 3%, 108%);
+						
+						p {
+							font-size: 89%;
+						}
+					}
+					
+					.price {
+						@include h3;
+					}
+				}
+			}
+		}
+		
+		.command {
+			@include grad_Button(186px, 0px, 0px);
+		}
+
+		.command:hover, .command:active {
+			color: $onHover_onClick;
+		}
+		
+		.desserts, .command {
+			margin-top: 48px;
+		}
+	}
+	
+}

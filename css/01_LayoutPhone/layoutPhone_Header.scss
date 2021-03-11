@@ -9,12 +9,30 @@
 /*					----  Header ---- */
 /* ============================================================================================================= */
 
+body {
+	@include body;
+}
 
 header {
     @include flexCenter;
     height: 63px;
     color: $textColor_Dark;
     
+    .arrow {
+        @include flexCenter;
+        @include icons(-83%);
+        @include circleEdges(40px);
+        font-size: 130%;
+        margin-top: 5px;
+        color: black;
+        width: 40px;
+    }
+
+    .arrow:hover, .arrow:active {
+        background: linear-gradient(to top, $secondaryColor, $primaryColor);
+        border: 2px solid black;
+    }
+
     h1{
         margin-top: 11px;
     }
