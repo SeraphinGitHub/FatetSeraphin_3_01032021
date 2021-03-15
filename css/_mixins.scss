@@ -94,43 +94,21 @@
 
 
 
-@mixin h2 {
-    font-family: "Roboto-Black";
-    line-height: 100%;
-	font-weight: 400;
-	font-size: 150%;
-
-    @include resetPos;
-}
-
-
-@mixin h3 {
-    font-family: "Roboto-Regular";
-    line-height: 100%;
-	font-weight: 800;
-	font-size: 100%;
-
-    @include resetPos;
-}
-
-
 @mixin p_Regular {
+    @include resetPos;
     font-family: "Roboto-Regular";
     line-height: 100%;
 	font-weight: 400;
 	font-size: 100%;
-
-    @include resetPos;
 }
 
 
 @mixin p_Light {
+    @include resetPos;
     font-family: "Roboto-Light";
     line-height: 100%;
 	font-weight: 400;
 	font-size: 100%;
-
-    @include resetPos;
 }
 
 
@@ -138,11 +116,10 @@
 
 
 @mixin body {
+	@include resetPos;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
-	@include resetPos;
 }
 
 
@@ -158,28 +135,24 @@
 @mixin grad_Button($width, $marginTop, $marginLeft) {
     @include flexCenter;
     @include circleEdges(50px);
-    @include p_Regular;
     width: $width;
     background: linear-gradient(to bottom right, $secondaryColor, $primaryColor);
     text-decoration: none;
     color: $textColor_Clear;
     margin-top: $marginTop;
     margin-left: $marginLeft;
+    
+    p {
+        @include p_Regular;
+    }
 }
 
 
-@mixin figText($height, $marginLeft, $fontSize) {
+@mixin figText($marginLeft) {
     @include flexBetween_Y;
 	justify-content: flex-start;
-	height: $height;
 	margin-left: $marginLeft;
-	font-size: $fontSize;
 	color: $textColor_Dark;
-
-	p {
-		font-size: 95%;
-		width: 100%;
-	}
 }
 
 

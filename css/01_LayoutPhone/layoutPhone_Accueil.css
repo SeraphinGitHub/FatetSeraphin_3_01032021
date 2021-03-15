@@ -2,6 +2,8 @@
 /* 			----  Smartphone Portrait ---- */
 /* ============================================================================================================= */
 body {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +12,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* ============================================================================================================= */
@@ -71,12 +71,6 @@ body {
   position: absolute;
   font-size: 100%;
   margin-left: 0%;
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 800;
-  font-size: 100%;
-  margin: 0px;
-  padding: 0px;
   width: 140px;
   position: unset;
   margin-top: 12px;
@@ -145,12 +139,6 @@ body {
   width: 100%;
   height: 50px;
   border-radius: 50px;
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 400;
-  font-size: 100%;
-  margin: 0px;
-  padding: 0px;
   width: 220px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -160,8 +148,18 @@ body {
   margin-left: 6px;
 }
 
+.explore .booking a p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 100%;
+}
+
 .explore .booking a:hover, .explore .booking a:active {
   color: black;
+  opacity: 80%;
 }
 
 /* ============================================================================================================= */
@@ -248,12 +246,6 @@ body {
           align-items: center;
   width: 100%;
   border-radius: 20px 20px 20px 20px;
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 800;
-  font-size: 100%;
-  margin: 0px;
-  padding: 0px;
   width: 86%;
   font-size: 97%;
   text-decoration: none;
@@ -264,7 +256,9 @@ body {
   margin-top: 6px;
 }
 
-.fonctionnement .buttons a h3 {
+.fonctionnement .buttons a h4 {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,6 +271,10 @@ body {
   width: 100%;
   height: 23px;
   border-radius: 23px;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 800;
+  font-size: 100%;
   width: 23px;
   font-weight: 400;
   background-color: #9356DC;
@@ -286,48 +284,13 @@ body {
   margin-right: 18.5%;
 }
 
-.fonctionnement .buttons a .mobile {
+.fonctionnement .buttons a .mobile, .fonctionnement .buttons a .menu {
   margin: 0px;
   padding: 0px;
   position: absolute;
   font-size: 100%;
   margin-left: 9%;
   font-size: 120%;
-}
-
-.fonctionnement .buttons a .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  width: 24px;
-  position: absolute;
-  margin-left: 8.5%;
-}
-
-.fonctionnement .buttons a .menu .menu_Dots {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  font-size: 100%;
-  margin-left: 0%;
-  position: unset;
-}
-
-.fonctionnement .buttons a .menu .menu_Bars {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  font-size: 100%;
-  margin-left: 0%;
-  font-size: 120%;
-  position: unset;
 }
 
 .fonctionnement .buttons a .store {
@@ -473,12 +436,6 @@ body {
 }
 
 .restaurants .resto_Thumbnails a .thumbnails figcaption .figText {
-  font-family: "Roboto-Black";
-  line-height: 100%;
-  font-weight: 400;
-  font-size: 150%;
-  margin: 0px;
-  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,15 +450,19 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 55%;
+  height: 60%;
   margin-left: 4%;
-  font-size: 112%;
   color: black;
 }
 
+.restaurants .resto_Thumbnails a .thumbnails figcaption .figText h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 110%;
+}
+
 .restaurants .resto_Thumbnails a .thumbnails figcaption .figText p {
-  font-size: 95%;
-  width: 100%;
+  font-size: 106%;
 }
 
 .restaurants .resto_Thumbnails a .thumbnails figcaption .heart {

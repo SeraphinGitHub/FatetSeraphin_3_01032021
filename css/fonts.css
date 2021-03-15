@@ -24,42 +24,42 @@
 
 /* Shrikhand Regular */
 h1 {
+  margin: 0px;
+  padding: 0px;
   font-family: "Shrikhand-Regular";
   line-height: 100%;
   font-weight: 400;
   font-size: 188%;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Roboto Black */
 h2 {
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto-Black";
   line-height: 118%;
   font-weight: 400;
   font-size: 150%;
   word-spacing: 18%;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Roboto Regular */
 h3 {
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 800;
   font-size: 100%;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Roboto Light */
 p {
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto-Light";
   line-height: 120%;
   font-weight: 400;
   font-size: 110%;
-  margin: 0px;
-  padding: 0px;
 }
 /*# sourceMappingURL=fonts.css.map */

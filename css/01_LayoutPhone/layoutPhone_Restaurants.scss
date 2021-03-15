@@ -28,19 +28,18 @@ section {
 		}
 	}
 
-	.menu {
+	.plaquette {
 		@include flexStart_Y;
 		@include radiusCorner(40px, 0px);
-		@include anchor;
 		margin-top: -55px;
 		height: 1160px;
 		background-color: $explore_MediumGrey;
-		// background-color: darkturquoise;
 
 		.name_resto {
 			@include flexBetween_X;
 			justify-content: space-around;
 			margin-top: 39px;
+			margin-bottom: 35px;
 
 			h1 {
 				font-size: 175%;
@@ -52,60 +51,123 @@ section {
 			}
 		}
 
-		.entrees, .plats, .desserts {
+		.meals_Container {
 			@include flexBetween_Y;
-			justify-content: flex-start;
 			width: 93%;
-			margin-top: 35px;
-
-			.title {
-				width: 40px;
-				font-size: 100%;
-				margin-left: 2%;
-				padding-bottom: 5px;
-				border-bottom: 3px solid $tertiaryColor;
-			}
-
-			.choice {
+			height: 906px;
+			
+			.meals {
 				@include flexBetween_Y;
-				@include anchor;
-				height: 232px;
-				margin-top: 14px;
-				
-				a {
-					@include flexBetween_X;
-					@include radiusCorner(15px, 15px);
-					text-decoration: none;
-					color: $textColor_Dark;
-					height: 68px;
-					background-color: $resto_Thumbnails;
+				justify-content: flex-start;
+	
+				.title {
+					width: 40px;
+					font-size: 100%;
+					margin-left: 2%;
+					padding-bottom: 5px;
+					border-bottom: 3px solid $tertiaryColor;
+				}
+	
+				.choice {
+					@include flexBetween_Y;
+					@include anchor;
+					height: 232px;
+					margin-top: 14px;
 					
-					.figText {
-						@include h3;
-						@include figText(62%, 3%, 108%);
+					$anchorHeight: 68px;
+
+					a {
+						@include flexBetween_X;
+						justify-content: flex-end;
+						@include radiusCorner(15px, 15px);
+						text-decoration: none;
+						color: $textColor_Dark;
+						height: $anchorHeight;
+						background-color: $resto_Thumbnails;
 						
-						p {
-							font-size: 89%;
+						$figTextHeight:42px;
+
+						.figText {
+							@include figText(3%);
+							height: $figTextHeight;
+							// background-color: darkorange;
+							
+							h3 {
+								@include flexStart_X;
+								font-size: 108%;
+							}
+							
+							p {
+								@include flexStart_X;
+								font-size: 94%;
+							}
+						}
+
+						.price {
+							// transition-property: transform;
+    						// transition-duration: 1000ms;
+							
+							@include flexBetween_X;
+							position: absolute;
+							width: 15%;
+							border-radius: 0px 15px 15px 0px;
+							background-color: $resto_Thumbnails;
+							// background-color: darkviolet;
+							
+							.priceText {
+								@include flexBetween_X;
+								margin-top: -4px;
+								width: 41%;
+								align-items: flex-end;
+								height: $figTextHeight;
+								// background-color: red;
+								
+								.priceDots {
+									font-size: 0%;
+								}
+							}
+
+							figure {
+								@include icons(0px);
+								@include flexCenter;
+								position: unset;
+								
+								width: 0%;
+								font-size: 0%;
+
+								border-radius: 0px 14px 14px 0px;
+								height: $anchorHeight;
+								color: $resto_Thumbnails;
+								background-color: $tertiaryColor;
+							}
 						}
 					}
-					
-					.price {
-						@include h3;
+
+					a:hover, a:active {
+						.price {
+							width: 36%;
+
+							.priceDots {
+								font-size: 100%;
+							}
+
+							figure {
+								width: 43%;
+								font-size: 140%;
+							}
+						}
 					}
 				}
 			}
 		}
 		
 		.command {
-			@include grad_Button(186px, 0px, 0px);
+			@include grad_Button(186px, 45px, 0px);
 		}
 
 		.command:hover, .command:active {
 			color: $onHover_onClick;
-		}
-		
-		.desserts, .command {
-			margin-top: 48px;
+			opacity: 80%;
 		}
 	}
 	

@@ -29,41 +29,37 @@
 
 /* Shrikhand Regular */
 h1 {
+    @include resetPos;
     font-family: "Shrikhand-Regular";
     line-height: 100%;
 	font-weight: 400;
 	font-size: 188%;
-
-    @include resetPos;
 }
 
 /* Roboto Black */
 h2 {
+    @include resetPos;
     font-family: "Roboto-Black";
     line-height: 118%;
 	font-weight: 400;
 	font-size: 150%;
     word-spacing: 18%;
-
-    @include resetPos;
 }
 
 /* Roboto Regular */
 h3 {
+    @include resetPos;
     font-family: "Roboto-Regular";
     line-height: 100%;
 	font-weight: 800;
 	font-size: 100%;
-
-    @include resetPos;
 }
 
 /* Roboto Light */
 p {
+    @include resetPos;
     font-family: "Roboto-Light";
     line-height: 120%;
 	font-weight: 400;
 	font-size: 110%;
-
-    @include resetPos;
 }

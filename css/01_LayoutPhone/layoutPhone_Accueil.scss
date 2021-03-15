@@ -33,7 +33,6 @@ body {
 		figure {
 			@include flexBetween_X;
 			@include icons(0%);
-			@include h3;
 			width: 140px;
 			position: unset;
 			margin-top: 12px;
@@ -62,6 +61,7 @@ body {
 
 		a:hover, a:active {
 			color: $onHover_onClick;
+			opacity: 80%;
 		}
 	}
 }
@@ -89,7 +89,6 @@ body {
 		a {
 			@include flexStart_X;
 			@include radiusCorner(20px, 20px);
-			@include h3;
 			width: 86%;
 			font-size: 97%;
 			text-decoration: none;
@@ -100,9 +99,16 @@ body {
 			margin-left: 12px;
 			margin-top: 6px;
 			
-			h3 {
+			h4 {
+				@include resetPos;
 				@include flexCenter;
 				@include circleEdges(23px);
+				
+				font-family: "Roboto-Regular";
+				line-height: 100%;
+				font-weight: 800;
+				font-size: 100%;
+
 				width: 23px;
 				font-weight: 400;
 				background-color: $primaryColor;
@@ -112,27 +118,9 @@ body {
 				margin-right: 18.5%;
 			}
 			
-			.mobile {
+			.mobile, .menu {
 				@include icons(9%); 
 				font-size: 120%;
-			}
-
-			.menu {
-				@include flexBetween_X;
-				width: 24px;
-				position: absolute;
-				margin-left: 8.5%; 
-
-				.menu_Dots {
-					@include icons(0%);
-					position: unset;
-				}
-				
-				.menu_Bars {
-					@include icons(0%);
-					font-size: 120%;
-					position: unset;
-				}
 			}
 
 			.store {
@@ -196,8 +184,16 @@ body {
 					// opacity: 50%;
 					
 					.figText {
-						@include h2;
-						@include figText(55%, 4%, 112%);
+						@include figText(60%, 4%);
+
+						h2 {
+							@include resetPos;
+							font-size: 110%;
+						}
+
+						p {
+							font-size: 106%;
+						}
 					}
 					
 					.heart {

@@ -2,6 +2,8 @@
 /* 			----  Smartphone Portrait ---- */
 /* ============================================================================================================= */
 body {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +12,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* ============================================================================================================= */
@@ -45,7 +45,7 @@ section .head_Photo img {
      object-fit: cover;
 }
 
-section .menu {
+section .plaquette {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,22 +63,7 @@ section .menu {
   background-color: #e9e9e9;
 }
 
-section .menu a {
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
-}
-
-section .menu a:hover {
-  -webkit-box-shadow: 5px 5px 5px grey;
-          box-shadow: 5px 5px 5px grey;
-}
-
-section .menu a:active {
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
-}
-
-section .menu .name_resto {
+section .plaquette .name_resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,14 +77,15 @@ section .menu .name_resto {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 39px;
+  margin-bottom: 35px;
 }
 
-section .menu .name_resto h1 {
+section .plaquette .name_resto h1 {
   font-size: 175%;
   margin-left: 5px;
 }
 
-section .menu .name_resto .heart {
+section .plaquette .name_resto .heart {
   margin: 0px;
   padding: 0px;
   position: absolute;
@@ -113,11 +99,27 @@ section .menu .name_resto .heart {
   background: linear-gradient(to top, #FF79DA, #9356DC);
 }
 
-section .menu .name_resto .heart .far {
+section .plaquette .name_resto .heart .far {
   color: black;
 }
 
-section .menu .entrees, section .menu .plats, section .menu .desserts {
+section .plaquette .meals_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  width: 93%;
+  height: 906px;
+}
+
+section .plaquette .meals_Container .meals {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,11 +134,9 @@ section .menu .entrees, section .menu .plats, section .menu .desserts {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 93%;
-  margin-top: 35px;
 }
 
-section .menu .entrees .title, section .menu .plats .title, section .menu .desserts .title {
+section .plaquette .meals_Container .meals .title {
   width: 40px;
   font-size: 100%;
   margin-left: 2%;
@@ -144,7 +144,7 @@ section .menu .entrees .title, section .menu .plats .title, section .menu .desse
   border-bottom: 3px solid #99E2D0;
 }
 
-section .menu .entrees .choice, section .menu .plats .choice, section .menu .desserts .choice {
+section .plaquette .meals_Container .meals .choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,22 +160,22 @@ section .menu .entrees .choice, section .menu .plats .choice, section .menu .des
   margin-top: 14px;
 }
 
-section .menu .entrees .choice a, section .menu .plats .choice a, section .menu .desserts .choice a {
+section .plaquette .meals_Container .meals .choice a {
   -webkit-box-shadow: 5px 5px 5px lightgray;
           box-shadow: 5px 5px 5px lightgray;
 }
 
-section .menu .entrees .choice a:hover, section .menu .plats .choice a:hover, section .menu .desserts .choice a:hover {
+section .plaquette .meals_Container .meals .choice a:hover {
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
 }
 
-section .menu .entrees .choice a:active, section .menu .plats .choice a:active, section .menu .desserts .choice a:active {
+section .plaquette .meals_Container .meals .choice a:active {
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
 }
 
-section .menu .entrees .choice a, section .menu .plats .choice a, section .menu .desserts .choice a {
+section .plaquette .meals_Container .meals .choice a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +186,9 @@ section .menu .entrees .choice a, section .menu .plats .choice a, section .menu 
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-radius: 15px 15px 15px 15px;
   text-decoration: none;
   color: black;
@@ -193,13 +196,7 @@ section .menu .entrees .choice a, section .menu .plats .choice a, section .menu 
   background-color: white;
 }
 
-section .menu .entrees .choice a .figText, section .menu .plats .choice a .figText, section .menu .desserts .choice a .figText {
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 800;
-  font-size: 100%;
-  margin: 0px;
-  padding: 0px;
+section .plaquette .meals_Container .meals .choice a .figText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,31 +211,126 @@ section .menu .entrees .choice a .figText, section .menu .plats .choice a .figTe
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 62%;
   margin-left: 3%;
-  font-size: 108%;
   color: black;
+  height: 42px;
 }
 
-section .menu .entrees .choice a .figText p, section .menu .plats .choice a .figText p, section .menu .desserts .choice a .figText p {
-  font-size: 95%;
+section .plaquette .meals_Container .meals .choice a .figText h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  font-size: 108%;
 }
 
-section .menu .entrees .choice a .figText p, section .menu .plats .choice a .figText p, section .menu .desserts .choice a .figText p {
-  font-size: 89%;
+section .plaquette .meals_Container .meals .choice a .figText p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 94%;
 }
 
-section .menu .entrees .choice a .price, section .menu .plats .choice a .price, section .menu .desserts .choice a .price {
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 800;
-  font-size: 100%;
+section .plaquette .meals_Container .meals .choice a .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+  width: 15%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: white;
+}
+
+section .plaquette .meals_Container .meals .choice a .price .priceText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: -4px;
+  width: 41%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 42px;
+}
+
+section .plaquette .meals_Container .meals .choice a .price .priceText .priceDots {
+  font-size: 0%;
+}
+
+section .plaquette .meals_Container .meals .choice a .price figure {
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  font-size: 100%;
+  margin-left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: unset;
+  width: 0%;
+  font-size: 0%;
+  border-radius: 0px 14px 14px 0px;
+  height: 68px;
+  color: white;
+  background-color: #99E2D0;
 }
 
-section .menu .command {
+section .plaquette .meals_Container .meals .choice a:hover .price, section .plaquette .meals_Container .meals .choice a:active .price {
+  width: 36%;
+}
+
+section .plaquette .meals_Container .meals .choice a:hover .price .priceDots, section .plaquette .meals_Container .meals .choice a:active .price .priceDots {
+  font-size: 100%;
+}
+
+section .plaquette .meals_Container .meals .choice a:hover .price figure, section .plaquette .meals_Container .meals .choice a:active .price figure {
+  width: 43%;
+  font-size: 140%;
+}
+
+section .plaquette .command {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,26 +343,26 @@ section .menu .command {
   width: 100%;
   height: 50px;
   border-radius: 50px;
-  font-family: "Roboto-Regular";
-  line-height: 100%;
-  font-weight: 400;
-  font-size: 100%;
-  margin: 0px;
-  padding: 0px;
   width: 186px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   text-decoration: none;
   color: white;
-  margin-top: 0px;
+  margin-top: 45px;
   margin-left: 0px;
 }
 
-section .menu .command:hover, section .menu .command:active {
-  color: black;
+section .plaquette .command p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto-Regular";
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 100%;
 }
 
-section .menu .desserts, section .menu .command {
-  margin-top: 48px;
+section .plaquette .command:hover, section .plaquette .command:active {
+  color: black;
+  opacity: 80%;
 }
 /*# sourceMappingURL=layoutPhone_Restaurants.css.map */

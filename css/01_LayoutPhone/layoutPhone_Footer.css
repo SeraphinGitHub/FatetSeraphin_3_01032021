@@ -4,6 +4,8 @@
 /* 					----  Footer  ---- */
 /* ============================================================================================================= */
 body {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,8 +14,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px;
-  padding: 0px;
 }
 
 footer {
@@ -60,12 +60,12 @@ footer ul li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto-Regular";
   line-height: 100%;
   font-weight: 400;
   font-size: 100%;
-  margin: 0px;
-  padding: 0px;
   list-style: none;
   line-height: 164%;
   width: 100%;
