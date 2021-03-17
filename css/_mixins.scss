@@ -169,3 +169,21 @@
 		color: $textColor_Dark;
 	}
 }
+
+
+@mixin spinner ($index, $margin, $color) {
+    z-index: $index;
+    position: absolute;
+    margin-top: $margin;
+    margin-left: $margin;
+    font-size: 500%;
+    color: $color;
+}
+
+
+
+
+
+@mixin indexAccueil {
+    z-index: 1;
+}

@@ -1,0 +1,171 @@
+
+
+@import "_colors";
+@import "_mixins";
+
+
+.loading {
+    z-index: 0;
+    opacity: 0%;
+
+    @include flexCenter;
+    position: fixed;
+    height: 100%;
+
+    animation: indexAnim 3.2s linear;
+    
+    .backLoad {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        
+        background-color: $loadingBackColor;
+        opacity: 70%;
+    }
+    
+    .spinnerBox {
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        .spinner_1, .spinner_2, .spinner_3 {
+            position: absolute;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            border: 13px solid transparent;
+            border-radius: 50%; 
+            
+            animation: 1s linear 3;
+        }
+        
+        .spinner_1 {
+            border-top-color: $primaryColor;
+            transform: rotate(45deg);
+            animation-name: spinner_1;
+        }
+        
+        .spinner_2 {
+            border-left-color: gray;
+            transform: rotate(135deg);
+            animation-name: spinner_2;
+        }
+        
+        .spinner_3 {
+            border-bottom-color: darkgray;
+            transform: rotate(225deg);
+            animation-name: spinner_3;
+        }
+    }
+}
+
+
+@keyframes indexAnim {
+    0% {
+        z-index: 10;
+        opacity: 100%;
+    }
+    
+    99% {
+        z-index: 10;
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+        z-index: 0;
+    }
+}
+
+
+@keyframes spinner_1 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    17% {
+        transform: rotate(135deg);
+    }
+
+    33% {
+        transform: rotate(225deg);
+    }
+
+    50% {
+        transform: rotate(315deg);
+    }
+
+    66% {
+        transform: rotate(405deg);
+    }
+
+    83% {
+        transform: rotate(405deg);
+    }
+   
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+
+@keyframes spinner_2 {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    17% {
+        transform: rotate(135deg);
+    }
+
+    33% {
+        transform: rotate(225deg);
+    }
+
+    50% {
+        transform: rotate(315deg);
+    }
+
+    66% {
+        transform: rotate(405deg);
+    }
+
+    83% {
+        transform: rotate(495deg);
+    }
+   
+    100% {
+        transform: rotate(495deg);
+    }
+}
+
+
+@keyframes spinner_3 {
+    0% {
+        transform: rotate(225deg);
+    }
+
+    17% {
+        transform: rotate(225deg);
+    }
+
+    33% {
+        transform: rotate(225deg);
+    }
+
+    50% {
+        transform: rotate(315deg);
+    }
+
+    66% {
+        transform: rotate(405deg);
+    }
+
+    83% {
+        transform: rotate(495deg);
+    }
+   
+    100% {
+        transform: rotate(585deg);
+    }
+}

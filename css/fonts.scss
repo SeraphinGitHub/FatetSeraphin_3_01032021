@@ -28,7 +28,7 @@
 
 
 /* Shrikhand Regular */
-h1 {
+h1, h6 {
     @include resetPos;
     font-family: "Shrikhand-Regular";
     line-height: 100%;

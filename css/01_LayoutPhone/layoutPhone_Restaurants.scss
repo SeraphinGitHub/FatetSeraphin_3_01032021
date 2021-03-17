@@ -104,26 +104,31 @@ section {
 						}
 
 						.price {
-							// transition-property: transform;
-    						// transition-duration: 1000ms;
-							
 							@include flexBetween_X;
 							position: absolute;
-							width: 15%;
+							
+							margin-right: -60px;
+							// width: 36%;
+							width: 135px;
+
 							border-radius: 0px 15px 15px 0px;
 							background-color: $resto_Thumbnails;
 							// background-color: darkviolet;
 							
+							transform: translateX(0);
+							transition: transform 0.5s;
+							
 							.priceText {
 								@include flexBetween_X;
 								margin-top: -4px;
-								width: 41%;
+								// width: 41%;
+								width: 55px;
 								align-items: flex-end;
 								height: $figTextHeight;
 								// background-color: red;
 								
 								.priceDots {
-									font-size: 0%;
+									font-size: 100%;
 								}
 							}
 
@@ -132,8 +137,9 @@ section {
 								@include flexCenter;
 								position: unset;
 								
-								width: 0%;
-								font-size: 0%;
+								// width: 43%;
+								width: 58px;
+								font-size: 140%;
 
 								border-radius: 0px 14px 14px 0px;
 								height: $anchorHeight;
@@ -145,16 +151,7 @@ section {
 
 					a:hover, a:active {
 						.price {
-							width: 36%;
-
-							.priceDots {
-								font-size: 100%;
-							}
-
-							figure {
-								width: 43%;
-								font-size: 140%;
-							}
+							transform: translateX(-60px);
 						}
 					}
 				}

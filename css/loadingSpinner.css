@@ -1,0 +1,285 @@
+.loading {
+  z-index: 0;
+  opacity: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  -webkit-animation: indexAnim 3.2s linear;
+          animation: indexAnim 3.2s linear;
+}
+
+.loading .backLoad {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: lightgrey;
+  opacity: 70%;
+}
+
+.loading .spinnerBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loading .spinnerBox .spinner_1, .loading .spinnerBox .spinner_2, .loading .spinnerBox .spinner_3 {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 13px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s linear 3;
+          animation: 1s linear 3;
+}
+
+.loading .spinnerBox .spinner_1 {
+  border-top-color: #9356DC;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-name: spinner_1;
+          animation-name: spinner_1;
+}
+
+.loading .spinnerBox .spinner_2 {
+  border-left-color: gray;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-animation-name: spinner_2;
+          animation-name: spinner_2;
+}
+
+.loading .spinnerBox .spinner_3 {
+  border-bottom-color: darkgray;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-animation-name: spinner_3;
+          animation-name: spinner_3;
+}
+
+@-webkit-keyframes indexAnim {
+  0% {
+    z-index: 10;
+    opacity: 100%;
+  }
+  99% {
+    z-index: 10;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 0;
+  }
+}
+
+@keyframes indexAnim {
+  0% {
+    z-index: 10;
+    opacity: 100%;
+  }
+  99% {
+    z-index: 10;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 0;
+  }
+}
+
+@-webkit-keyframes spinner_1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  17% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  100% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+}
+
+@keyframes spinner_1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  17% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  100% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+}
+
+@-webkit-keyframes spinner_2 {
+  0% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  17% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+  100% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+}
+
+@keyframes spinner_2 {
+  0% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  17% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+  100% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+}
+
+@-webkit-keyframes spinner_3 {
+  0% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  17% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+  100% {
+    -webkit-transform: rotate(585deg);
+            transform: rotate(585deg);
+  }
+}
+
+@keyframes spinner_3 {
+  0% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  17% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  33% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  50% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  66% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  83% {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
+  100% {
+    -webkit-transform: rotate(585deg);
+            transform: rotate(585deg);
+  }
+}
+/*# sourceMappingURL=loadingSpinner.css.map */

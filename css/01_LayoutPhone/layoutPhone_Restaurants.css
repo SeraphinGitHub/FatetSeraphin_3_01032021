@@ -264,9 +264,16 @@ section .plaquette .meals_Container .meals .choice a .price {
           align-items: center;
   width: 100%;
   position: absolute;
-  width: 15%;
+  margin-right: -60px;
+  width: 135px;
   border-radius: 0px 15px 15px 0px;
   background-color: white;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 section .plaquette .meals_Container .meals .choice a .price .priceText {
@@ -281,7 +288,7 @@ section .plaquette .meals_Container .meals .choice a .price .priceText {
           align-items: center;
   width: 100%;
   margin-top: -4px;
-  width: 41%;
+  width: 55px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -289,7 +296,7 @@ section .plaquette .meals_Container .meals .choice a .price .priceText {
 }
 
 section .plaquette .meals_Container .meals .choice a .price .priceText .priceDots {
-  font-size: 0%;
+  font-size: 100%;
 }
 
 section .plaquette .meals_Container .meals .choice a .price figure {
@@ -309,8 +316,8 @@ section .plaquette .meals_Container .meals .choice a .price figure {
           align-items: center;
   width: 100%;
   position: unset;
-  width: 0%;
-  font-size: 0%;
+  width: 58px;
+  font-size: 140%;
   border-radius: 0px 14px 14px 0px;
   height: 68px;
   color: white;
@@ -318,16 +325,8 @@ section .plaquette .meals_Container .meals .choice a .price figure {
 }
 
 section .plaquette .meals_Container .meals .choice a:hover .price, section .plaquette .meals_Container .meals .choice a:active .price {
-  width: 36%;
-}
-
-section .plaquette .meals_Container .meals .choice a:hover .price .priceDots, section .plaquette .meals_Container .meals .choice a:active .price .priceDots {
-  font-size: 100%;
-}
-
-section .plaquette .meals_Container .meals .choice a:hover .price figure, section .plaquette .meals_Container .meals .choice a:active .price figure {
-  width: 43%;
-  font-size: 140%;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
 
 section .plaquette .command {

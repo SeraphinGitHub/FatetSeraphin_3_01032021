@@ -14,6 +14,7 @@ body {
 }
 
 footer {
+	@include indexAccueil;
 	@include flexStart_Y;
 	justify-content: flex-start;
 	background-color: $footerColor;
