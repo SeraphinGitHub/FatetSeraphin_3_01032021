@@ -35,20 +35,28 @@
 
         <section>
 
-            <figure class="head_Photo">
+            <figure class="headPhoto">
                 <img src="../images/restaurants/laPaletteDuGout.jpg" alt="restaurant's meal">
             </figure>
 
             <div class="plaquette">
-                <div class="name_resto">
+                <div class="nameResto">
                     <h6>La palette du goût</h6>
                     
-                    <figure class="heart">
-                        <i class="far fa-heart"></i>
-                    </figure>
+                    <div class="heart">
+                        <figure class="fullHeart">
+                            <i class="fas fa-heart"></i>
+                        </figure>
+
+                        <figure class="emptyHeart">
+                            <i class="far fa-heart"></i>
+                        </figure>
+
+                        <div class="heartFilter"></div>
+                    </div>
                 </div>
 
-                <div class="meals_Container">
+                <div class="mealsContainer">
                     <div class="meals">
                         
                         <!-- ************************************************************ -->
@@ -60,18 +68,14 @@
                         <div class="choice">
     
                             <a href="Fricassee_d_escargot">
-                                <div class="figText">
+                                <div class="choiceText">
                                     <h3>Fricassée d'escargot</h3>
                                     <p>Au piment d'Espelette</p>
                                 </div>
-    
-                                <div class="price">
-                                    <div class="priceText">
-                                        <h3 class="priceDots">...</h3>
-    
-                                        <h3>25€</h3>
-                                    </div>
-
+                                
+                                <h3 class="price">25€</h3>
+                                
+                                <div class="checkBox">
                                     <figure>
                                         <i class="fas fa-check-circle"></i>
                                     </figure>
@@ -79,18 +83,14 @@
                             </a>
     
                             <a href="Foie_gras_de_canard_mi_cuit">
-                                <div class="figText">
+                                <div class="choiceText">
                                     <h3>Foie gras de canard mi-cuit</h3>
                                     <p>Et ses copeaux de truffe noire</p>
                                 </div>
-    
-                                <div class="price">
-                                    <div class="priceText">
-                                        <h3 class="priceDots">...</h3>
-    
-                                        <h3>35€</h3>
-                                    </div>
 
+                                <h3 class="price">35€</h3>
+
+                                <div class="checkBox">
                                     <figure>
                                         <i class="fas fa-check-circle"></i>
                                     </figure>
@@ -98,18 +98,14 @@
                             </a>
     
                             <a href="Oeuf_au_plat">
-                                <div class="figText">
+                                <div class="choiceText">
                                     <h3>Oeuf au plat</h3>
                                     <p>Assaisonné à la truffe sur lit de caviar</p>
                                 </div>
     
-                                <div class="price">
-                                    <div class="priceText">
-                                        <h3 class="priceDots">...</h3>
-    
-                                        <h3>20€</h3>
-                                    </div>
+                                <h3 class="price">20€</h3>
 
+                                <div class="checkBox">
                                     <figure>
                                         <i class="fas fa-check-circle"></i>
                                     </figure>
@@ -127,7 +123,7 @@
 
                         <p class="title">PLATS</p>
     
-                        <div class="choice">
+                        <!-- <div class="choice">
     
                             <a href="Filet_de_boeuf_aux_herbes">
                                 <div class="figText">
@@ -186,7 +182,7 @@
                                 </div>
                             </a>
     
-                        </div>
+                        </div> -->
                     </div>
     
                     <div class="meals">
@@ -197,7 +193,7 @@
 
                         <p class="title">DESERTS</p>
     
-                        <div class="choice">
+                        <!-- <div class="choice">
     
                             <a href="Paris_Brest">
                                 <div class="figText">
@@ -256,10 +252,10 @@
                                 </div>
                             </a>
     
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-           
+    
                 <a class="command" href="Commander">
                    <p>Commander</p>
                 </a>

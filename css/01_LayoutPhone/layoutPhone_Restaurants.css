@@ -31,14 +31,14 @@ section {
   width: 100%;
 }
 
-section .head_Photo {
+section .headPhoto {
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 275px;
 }
 
-section .head_Photo img {
+section .headPhoto img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -63,7 +63,7 @@ section .plaquette {
   background-color: #e9e9e9;
 }
 
-section .plaquette .name_resto {
+section .plaquette .nameResto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,36 +74,100 @@ section .plaquette .name_resto {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-between;
+  width: 89%;
   margin-top: 39px;
   margin-bottom: 35px;
 }
 
-section .plaquette .name_resto h1 {
+section .plaquette .nameResto h6 {
   font-size: 175%;
-  margin-left: 5px;
 }
 
-section .plaquette .name_resto .heart {
+section .plaquette .nameResto .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   margin: 0px;
   padding: 0px;
   position: absolute;
   font-size: 100%;
   margin-left: 0%;
-  font-size: 160%;
   position: unset;
-  margin-top: -6px;
-  margin-right: 5.5%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to top, #FF79DA, #9356DC);
+  height: 30px;
+  width: 30px;
+  font-size: 160%;
+  margin-top: -8px;
+  margin-right: 13px;
+  margin-left: 8%;
 }
 
-section .plaquette .name_resto .heart .far {
+section .plaquette .nameResto .heart .emptyHeart, section .plaquette .nameResto .heart .fullHeart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 30px;
+}
+
+section .plaquette .nameResto .heart .emptyHeart {
+  z-index: 30;
   color: black;
 }
 
-section .plaquette .meals_Container {
+section .plaquette .nameResto .heart .fullHeart {
+  z-index: 10;
+  color: #9356DC;
+}
+
+section .plaquette .nameResto .heart .emptyHeart, section .plaquette .nameResto .heart .fullHeart, section .plaquette .nameResto .heart .heartFilter {
+  position: absolute;
+}
+
+section .plaquette .nameResto .heart .heartFilter {
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #e9e9e9;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+section .plaquette .nameResto .heart:hover .heartFilter, section .plaquette .nameResto .heart:active .heartFilter {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: -10% 80%;
+          transform-origin: -10% 80%;
+}
+
+section .plaquette .mealsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +183,7 @@ section .plaquette .meals_Container {
   height: 906px;
 }
 
-section .plaquette .meals_Container .meals {
+section .plaquette .mealsContainer .meals {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +200,7 @@ section .plaquette .meals_Container .meals {
           justify-content: flex-start;
 }
 
-section .plaquette .meals_Container .meals .title {
+section .plaquette .mealsContainer .meals .title {
   width: 40px;
   font-size: 100%;
   margin-left: 2%;
@@ -144,7 +208,7 @@ section .plaquette .meals_Container .meals .title {
   border-bottom: 3px solid #99E2D0;
 }
 
-section .plaquette .meals_Container .meals .choice {
+section .plaquette .mealsContainer .meals .choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,173 +224,19 @@ section .plaquette .meals_Container .meals .choice {
   margin-top: 14px;
 }
 
-section .plaquette .meals_Container .meals .choice a {
+section .plaquette .mealsContainer .meals .choice a {
   -webkit-box-shadow: 5px 5px 5px lightgray;
           box-shadow: 5px 5px 5px lightgray;
 }
 
-section .plaquette .meals_Container .meals .choice a:hover {
+section .plaquette .mealsContainer .meals .choice a:hover {
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
 }
 
-section .plaquette .meals_Container .meals .choice a:active {
+section .plaquette .mealsContainer .meals .choice a:active {
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
-}
-
-section .plaquette .meals_Container .meals .choice a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  border-radius: 15px 15px 15px 15px;
-  text-decoration: none;
-  color: black;
-  height: 68px;
-  background-color: white;
-}
-
-section .plaquette .meals_Container .meals .choice a .figText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 3%;
-  color: black;
-  height: 42px;
-}
-
-section .plaquette .meals_Container .meals .choice a .figText h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  font-size: 108%;
-}
-
-section .plaquette .meals_Container .meals .choice a .figText p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  font-size: 94%;
-}
-
-section .plaquette .meals_Container .meals .choice a .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  position: absolute;
-  margin-right: -60px;
-  width: 135px;
-  border-radius: 0px 15px 15px 0px;
-  background-color: white;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-section .plaquette .meals_Container .meals .choice a .price .priceText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-top: -4px;
-  width: 55px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 42px;
-}
-
-section .plaquette .meals_Container .meals .choice a .price .priceText .priceDots {
-  font-size: 100%;
-}
-
-section .plaquette .meals_Container .meals .choice a .price figure {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  font-size: 100%;
-  margin-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  position: unset;
-  width: 58px;
-  font-size: 140%;
-  border-radius: 0px 14px 14px 0px;
-  height: 68px;
-  color: white;
-  background-color: #99E2D0;
-}
-
-section .plaquette .meals_Container .meals .choice a:hover .price, section .plaquette .meals_Container .meals .choice a:active .price {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
 }
 
 section .plaquette .command {
@@ -363,5 +273,206 @@ section .plaquette .command p {
 section .plaquette .command:hover, section .plaquette .command:active {
   color: black;
   opacity: 80%;
+}
+
+/* ============================================================================================================= */
+/* 			----  Anchor Choice Menu  ---- */
+/* ============================================================================================================= */
+body section .plaquette .mealsContainer .meals .choice a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: black;
+  height: 68px;
+  background-color: white;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .choiceText {
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 3%;
+  color: black;
+  height: 42px;
+  width: 80%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: darkorange;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .choiceText h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 108%;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .choiceText p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 94%;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .price {
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  height: 42px;
+  width: 15%;
+  margin-right: 7px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: darkviolet;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .checkBox {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  height: 68px;
+  width: 15%;
+  background-color: #99E2D0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin-left: 94%;
+}
+
+body section .plaquette .mealsContainer .meals .choice a .checkBox figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 130%;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+/* ============================================================================================================= */
+/* 			----  Anchor Choice Menu : OnHover ---- */
+/* ============================================================================================================= */
+body section .plaquette .mealsContainer .meals .choice a:hover .choiceText,
+body section .plaquette .mealsContainer .meals .choice a:active .choiceText {
+  width: 63%;
+}
+
+body section .plaquette .mealsContainer .meals .choice a:hover .checkBox,
+body section .plaquette .mealsContainer .meals .choice a:active .checkBox {
+  margin-left: 78%;
+}
+
+body section .plaquette .mealsContainer .meals .choice a:hover .checkBox figure,
+body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure {
+  -webkit-animation: checkBox 0.5s;
+          animation: checkBox 0.5s;
+}
+
+/* ============================================================================================================= */
+/* 			----  Animations  ---- */
+/* ============================================================================================================= */
+@-webkit-keyframes checkBox {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes checkBox {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=layoutPhone_Restaurants.css.map */

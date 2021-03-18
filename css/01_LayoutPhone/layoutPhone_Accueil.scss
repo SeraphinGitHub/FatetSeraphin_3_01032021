@@ -151,7 +151,7 @@ body {
 		margin-bottom: 23px;
 	}
 	
-	.resto_Thumbnails {
+	.restoThumbnails {
 		@include flexBetween_Y;
 		@include anchor;
 		height: 1058px;
@@ -164,6 +164,27 @@ body {
 			background-color: $resto_Thumbnails;
 			// background-color: lime;
 			
+			.nouveau {
+				@include flexCenter;
+				position: absolute;
+				height: 30px;
+				width: 90px;
+
+				margin-top: 15px;
+				margin-left: 65%;
+
+				text-decoration: none;
+				color: green;
+				border-radius: 2px;
+
+				background-color: $tertiaryColor;
+
+				p {
+					font-size: 90%;
+					font-weight: 800;
+				}
+			}
+
 			.thumbnails {
 				@include flexBetween_Y;
 				@include resetPos;
@@ -200,7 +221,17 @@ body {
 					}
 					
 					.heart {
-						@include heart(-6px, 7%);
+						@include heart;
+						margin-right: 40px;
+
+						.heartFilter {
+							background-color: $resto_Thumbnails;
+							// background-color: blue;
+						}
+					}
+		
+					.heart:hover, .heart:active {
+						@include heartOnHover;
 					}
 				}
 			}

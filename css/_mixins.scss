@@ -156,18 +156,67 @@
 }
 
 
-@mixin heart($marginTop, $marginRight) {
-    @include icons(0%);
-	font-size: 160%;
+
+
+
+@mixin heart {
+    $heartWidth: 30px;
+
+    @include flexCenter;
+	@include icons(0%);
 	position: unset;
-	margin-top: $marginTop;
-	margin-right: $marginRight;
-	background: linear-gradient(to top, $secondaryColor, $primaryColor);
-						
-	.far {
-		// position: absolute;
+	height: $heartWidth;
+	width: $heartWidth;
+
+	font-size: 160%;
+				
+	.emptyHeart, .fullHeart {
+		@include flexCenter;
+		@include resetPos;
+		height: 100%;
+		width: $heartWidth;
+    }
+
+    .emptyHeart {
+		z-index: 30;
 		color: $textColor_Dark;
 	}
+					
+	.fullHeart {
+		z-index: 10;
+		color: $primaryColor;
+	}
+				
+	.emptyHeart, .fullHeart, .heartFilter {
+		position: absolute;
+	}
+		
+	.heartFilter {
+		z-index: 20;
+
+        @include flexCenter;
+		border-radius: 50%;
+		height: $heartWidth;
+		width: $heartWidth;
+		background-color: $explore_MediumGrey;
+		// background-color: blue;
+		transition-duration: 1.5s;
+	}
+}
+
+@mixin heartOnHover {
+    .heartFilter {
+        transform: rotate(-90deg);
+        transform-origin: -10% 80%;
+    }
+}
+
+
+@mixin textEllipsis {
+    display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 

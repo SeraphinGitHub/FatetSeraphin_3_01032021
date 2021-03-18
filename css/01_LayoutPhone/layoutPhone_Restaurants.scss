@@ -12,13 +12,18 @@ body {
 }
 
 
+$figTextHeight:42px;
+$anchorHeight: 68px;
+$mealContainerWidth: 93%;
+$checkedDuration: 0.5s;
+
 /* ============================================================================================================= */
 /* 			----  Main Section  ---- */
 /* ============================================================================================================= */
 section {
 	@include flexBetween_Y;
 
-	.head_Photo {
+	.headPhoto {
 		@include resetPos;
 		@include fig(275px);
 
@@ -35,25 +40,32 @@ section {
 		height: 1160px;
 		background-color: $explore_MediumGrey;
 
-		.name_resto {
+		.nameResto {
 			@include flexBetween_X;
-			justify-content: space-around;
+			justify-content: space-between;
+			width: 89%;
 			margin-top: 39px;
 			margin-bottom: 35px;
 
-			h1 {
+			h6 {
 				font-size: 175%;
-				margin-left: 5px;
 			}
 
 			.heart {
-				@include heart(-6px, 5.5%);
+				@include heart;
+				margin-top: -8px;
+				margin-right: 13px;
+				margin-left: 8%;
+			}
+
+			.heart:hover, .heart:active {
+				@include heartOnHover;
 			}
 		}
-
-		.meals_Container {
+		
+		.mealsContainer {
 			@include flexBetween_Y;
-			width: 93%;
+			width: $mealContainerWidth;
 			height: 906px;
 			
 			.meals {
@@ -73,91 +85,10 @@ section {
 					@include anchor;
 					height: 232px;
 					margin-top: 14px;
-					
-					$anchorHeight: 68px;
-
-					a {
-						@include flexBetween_X;
-						justify-content: flex-end;
-						@include radiusCorner(15px, 15px);
-						text-decoration: none;
-						color: $textColor_Dark;
-						height: $anchorHeight;
-						background-color: $resto_Thumbnails;
-						
-						$figTextHeight:42px;
-
-						.figText {
-							@include figText(3%);
-							height: $figTextHeight;
-							// background-color: darkorange;
-							
-							h3 {
-								@include flexStart_X;
-								font-size: 108%;
-							}
-							
-							p {
-								@include flexStart_X;
-								font-size: 94%;
-							}
-						}
-
-						.price {
-							@include flexBetween_X;
-							position: absolute;
-							
-							margin-right: -60px;
-							// width: 36%;
-							width: 135px;
-
-							border-radius: 0px 15px 15px 0px;
-							background-color: $resto_Thumbnails;
-							// background-color: darkviolet;
-							
-							transform: translateX(0);
-							transition: transform 0.5s;
-							
-							.priceText {
-								@include flexBetween_X;
-								margin-top: -4px;
-								// width: 41%;
-								width: 55px;
-								align-items: flex-end;
-								height: $figTextHeight;
-								// background-color: red;
-								
-								.priceDots {
-									font-size: 100%;
-								}
-							}
-
-							figure {
-								@include icons(0px);
-								@include flexCenter;
-								position: unset;
-								
-								// width: 43%;
-								width: 58px;
-								font-size: 140%;
-
-								border-radius: 0px 14px 14px 0px;
-								height: $anchorHeight;
-								color: $resto_Thumbnails;
-								background-color: $tertiaryColor;
-							}
-						}
-					}
-
-					a:hover, a:active {
-						.price {
-							transform: translateX(-60px);
-						}
-					}
 				}
 			}
 		}
-		
+
 		.command {
 			@include grad_Button(186px, 45px, 0px);
 		}
@@ -167,5 +98,113 @@ section {
 			opacity: 80%;
 		}
 	}
-	
+}
+
+
+/* ============================================================================================================= */
+/* 			----  Anchor Choice Menu  ---- */
+/* ============================================================================================================= */
+body section .plaquette .mealsContainer .meals .choice a {
+	@include flexStart_X;
+	flex-wrap: nowrap;
+	@include radiusCorner(15px, 15px);
+	text-decoration: none;
+	color: $textColor_Dark;
+	height: $anchorHeight;
+						
+	background-color: $resto_Thumbnails;
+
+	.choiceText {
+		z-index: 20;
+		@include figText(3%);
+		height: $figTextHeight;
+		width: 80%;
+							
+		transition-duration: $checkedDuration;
+							
+		// opacity: 60%;
+		background-color: darkorange;
+							
+		h3 {
+			@include flexStart_X;
+			@include textEllipsis;
+			font-size: 108%;
+		}
+							
+		p {
+			@include flexStart_X;
+			@include textEllipsis;
+			font-size: 94%;
+		}
+	}
+
+	.price {
+		z-index: 20;
+		@include flexStart_Y;
+		align-content: flex-end;
+		height: $figTextHeight;
+		width: 15%;
+		margin-right: 7px;
+
+		transition-duration: $checkedDuration;
+							
+		// opacity: 60%;
+		background-color: darkviolet;
+	}
+						
+	.checkBox {
+		z-index: 0;
+		@include flexCenter;
+		border-radius: 0px 15px 15px 0px;
+		position: absolute;
+		height: $anchorHeight;
+		width: 15%;
+
+		background-color: $tertiaryColor;
+		transition-duration: $checkedDuration;
+							
+		// opacity: 50%;
+		margin-left: 94%;
+
+		figure {
+			@include flexCenter;
+			font-size: 130%;
+			color: $resto_Thumbnails;
+
+			transition-duration: $checkedDuration;
+		}
+	}
+}
+
+
+/* ============================================================================================================= */
+/* 			----  Anchor Choice Menu : OnHover ---- */
+/* ============================================================================================================= */
+body section .plaquette .mealsContainer .meals .choice a:hover, 
+body section .plaquette .mealsContainer .meals .choice a:active {
+	.choiceText {
+		width: 63%;
+	}
+
+	.checkBox {
+		margin-left: 78%
+	}
+					
+	.checkBox figure {
+		animation: checkBox $checkedDuration;
+	}
+}
+
+
+/* ============================================================================================================= */
+/* 			----  Animations  ---- */
+/* ============================================================================================================= */
+@keyframes checkBox {
+	0% {
+		transform: rotate(90deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
