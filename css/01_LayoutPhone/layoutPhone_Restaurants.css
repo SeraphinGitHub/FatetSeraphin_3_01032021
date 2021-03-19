@@ -122,7 +122,6 @@ section .plaquette .nameResto .heart .emptyHeart, section .plaquette .nameResto 
   width: 100%;
   margin: 0px;
   padding: 0px;
-  height: 100%;
   width: 30px;
 }
 
@@ -222,6 +221,8 @@ section .plaquette .mealsContainer .meals .choice {
   width: 100%;
   height: 232px;
   margin-top: 14px;
+  -webkit-animation: choiceMenu 1s linear;
+          animation: choiceMenu 1s linear;
 }
 
 section .plaquette .mealsContainer .meals .choice a {
@@ -433,6 +434,26 @@ body section .plaquette .mealsContainer .meals .choice a .checkBox figure {
           transition-duration: 0.5s;
 }
 
+.choice_1, .choice_2, .choice_3 {
+  -webkit-animation: 0.8s linear;
+          animation: 0.8s linear;
+}
+
+.choice_1 {
+  -webkit-animation-name: choice_1;
+          animation-name: choice_1;
+}
+
+.choice_2 {
+  -webkit-animation-name: choice_2;
+          animation-name: choice_2;
+}
+
+.choice_3 {
+  -webkit-animation-name: choice_3;
+          animation-name: choice_3;
+}
+
 /* ============================================================================================================= */
 /* 			----  Anchor Choice Menu : OnHover ---- */
 /* ============================================================================================================= */
@@ -473,6 +494,94 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes choiceMenu {
+  0% {
+    margin-top: 20px;
+    height: 239px;
+  }
+  100% {
+    margin-top: 14px;
+    height: 232px;
+  }
+}
+
+@keyframes choiceMenu {
+  0% {
+    margin-top: 20px;
+    height: 239px;
+  }
+  100% {
+    margin-top: 14px;
+    height: 232px;
+  }
+}
+
+@-webkit-keyframes choice_1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes choice_1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes choice_2 {
+  0% {
+    opacity: 0%;
+  }
+  33% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes choice_2 {
+  0% {
+    opacity: 0%;
+  }
+  33% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes choice_3 {
+  0% {
+    opacity: 0%;
+  }
+  66% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes choice_3 {
+  0% {
+    opacity: 0%;
+  }
+  66% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=layoutPhone_Restaurants.css.map */

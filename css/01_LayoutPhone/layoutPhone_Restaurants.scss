@@ -15,7 +15,10 @@ body {
 $figTextHeight:42px;
 $anchorHeight: 68px;
 $mealContainerWidth: 93%;
-$checkedDuration: 0.5s;
+$checkedSlideDuration: 0.5s;
+$choiceUpwardDuration: 1s;
+$choiceAppearDuration: 0.8s;
+
 
 /* ============================================================================================================= */
 /* 			----  Main Section  ---- */
@@ -85,6 +88,8 @@ section {
 					@include anchor;
 					height: 232px;
 					margin-top: 14px;
+
+					animation: choiceMenu $choiceUpwardDuration linear;
 				}
 			}
 		}
@@ -120,7 +125,7 @@ body section .plaquette .mealsContainer .meals .choice a {
 		height: $figTextHeight;
 		width: 80%;
 							
-		transition-duration: $checkedDuration;
+		transition-duration: $checkedSlideDuration;
 							
 		// opacity: 60%;
 		background-color: darkorange;
@@ -146,7 +151,7 @@ body section .plaquette .mealsContainer .meals .choice a {
 		width: 15%;
 		margin-right: 7px;
 
-		transition-duration: $checkedDuration;
+		transition-duration: $checkedSlideDuration;
 							
 		// opacity: 60%;
 		background-color: darkviolet;
@@ -161,7 +166,7 @@ body section .plaquette .mealsContainer .meals .choice a {
 		width: 15%;
 
 		background-color: $tertiaryColor;
-		transition-duration: $checkedDuration;
+		transition-duration: $checkedSlideDuration;
 							
 		// opacity: 50%;
 		margin-left: 94%;
@@ -171,9 +176,26 @@ body section .plaquette .mealsContainer .meals .choice a {
 			font-size: 130%;
 			color: $resto_Thumbnails;
 
-			transition-duration: $checkedDuration;
+			transition-duration: $checkedSlideDuration;
 		}
 	}
+}
+
+
+.choice_1, .choice_2, .choice_3 {
+	animation: $choiceAppearDuration linear;
+}
+
+.choice_1 {
+	animation-name: choice_1;
+}
+
+.choice_2 {
+	animation-name: choice_2;
+}
+
+.choice_3 {
+	animation-name: choice_3;
 }
 
 
@@ -191,7 +213,7 @@ body section .plaquette .mealsContainer .meals .choice a:active {
 	}
 					
 	.checkBox figure {
-		animation: checkBox $checkedDuration;
+		animation: checkBox $checkedSlideDuration;
 	}
 }
 
@@ -206,5 +228,59 @@ body section .plaquette .mealsContainer .meals .choice a:active {
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes choiceMenu {
+	0% {
+		margin-top: 20px;
+		height: 239px;
+	}
+
+	100% {
+		margin-top: 14px;
+		height: 232px;
+	}
+}
+
+
+@keyframes choice_1 {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+@keyframes choice_2 {
+	0% {
+		opacity: 0%;
+	}
+
+	33% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+@keyframes choice_3 {
+	0% {
+		opacity: 0%;
+	}
+
+	66% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
 	}
 }

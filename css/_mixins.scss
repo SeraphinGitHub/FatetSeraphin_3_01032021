@@ -173,7 +173,6 @@
 	.emptyHeart, .fullHeart {
 		@include flexCenter;
 		@include resetPos;
-		height: 100%;
 		width: $heartWidth;
     }
 
