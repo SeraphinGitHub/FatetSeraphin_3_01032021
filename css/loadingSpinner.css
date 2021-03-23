@@ -34,7 +34,7 @@
   height: 100px;
 }
 
-.loading .spinnerBox .spinner_1, .loading .spinnerBox .spinner_2, .loading .spinnerBox .spinner_3 {
+.loading .spinnerBox .spin {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

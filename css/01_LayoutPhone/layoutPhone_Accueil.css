@@ -563,8 +563,8 @@ body {
   height: 30px;
   width: 30px;
   background-color: #e9e9e9;
-  -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .restaurants .restoThumbnails a .thumbnails figcaption .heart .heartFilter {

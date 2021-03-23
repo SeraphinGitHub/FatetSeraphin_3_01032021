@@ -63,6 +63,21 @@ section .plaquette {
   background-color: #e9e9e9;
 }
 
+section .plaquette a {
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+          box-shadow: 5px 5px 5px lightgray;
+}
+
+section .plaquette a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+section .plaquette a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
 section .plaquette .nameResto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +97,7 @@ section .plaquette .nameResto {
 
 section .plaquette .nameResto h6 {
   font-size: 175%;
+  width: 100%;
 }
 
 section .plaquette .nameResto .heart {
@@ -155,8 +171,8 @@ section .plaquette .nameResto .heart .heartFilter {
   height: 30px;
   width: 30px;
   background-color: #e9e9e9;
-  -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 section .plaquette .nameResto .heart:hover .heartFilter, section .plaquette .nameResto .heart:active .heartFilter {
@@ -197,6 +213,7 @@ section .plaquette .mealsContainer .meals {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  height: 280px;
 }
 
 section .plaquette .mealsContainer .meals .title {
@@ -207,7 +224,7 @@ section .plaquette .mealsContainer .meals .title {
   border-bottom: 3px solid #99E2D0;
 }
 
-section .plaquette .mealsContainer .meals .choice {
+section .plaquette .mealsContainer .meals .choices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,23 +236,23 @@ section .plaquette .mealsContainer .meals .choice {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   width: 100%;
-  height: 232px;
+  height: 86%;
   margin-top: 14px;
-  -webkit-animation: choiceMenu 1s linear;
-          animation: choiceMenu 1s linear;
+  -webkit-animation: choicesMenu 1.2s linear;
+          animation: choicesMenu 1.2s linear;
 }
 
-section .plaquette .mealsContainer .meals .choice a {
+section .plaquette .mealsContainer .meals .choices a {
   -webkit-box-shadow: 5px 5px 5px lightgray;
           box-shadow: 5px 5px 5px lightgray;
 }
 
-section .plaquette .mealsContainer .meals .choice a:hover {
+section .plaquette .mealsContainer .meals .choices a:hover {
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
 }
 
-section .plaquette .mealsContainer .meals .choice a:active {
+section .plaquette .mealsContainer .meals .choices a:active {
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
 }
@@ -279,7 +296,7 @@ section .plaquette .command:hover, section .plaquette .command:active {
 /* ============================================================================================================= */
 /* 			----  Anchor Choice Menu  ---- */
 /* ============================================================================================================= */
-body section .plaquette .mealsContainer .meals .choice a {
+body section .plaquette .mealsContainer .meals .choices a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,16 +311,18 @@ body section .plaquette .mealsContainer .meals .choice a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  border-radius: 15px 15px 15px 15px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
   text-decoration: none;
   color: black;
   height: 68px;
   background-color: white;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .choiceText {
+body section .plaquette .mealsContainer .meals .choices a .setText {
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,10 +344,9 @@ body section .plaquette .mealsContainer .meals .choice a .choiceText {
   width: 80%;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  background-color: darkorange;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .choiceText h3 {
+body section .plaquette .mealsContainer .meals .choices a .setText h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,9 +366,10 @@ body section .plaquette .mealsContainer .meals .choice a .choiceText h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 108%;
+  padding-bottom: 5px;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .choiceText p {
+body section .plaquette .mealsContainer .meals .choices a .setText p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +391,7 @@ body section .plaquette .mealsContainer .meals .choice a .choiceText p {
   font-size: 94%;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .price {
+body section .plaquette .mealsContainer .meals .choices a .price {
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,12 +409,12 @@ body section .plaquette .mealsContainer .meals .choice a .price {
   height: 42px;
   width: 15%;
   margin-right: 7px;
+  padding-bottom: 4px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  background-color: darkviolet;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .checkBox {
+body section .plaquette .mealsContainer .meals .choices a .checkBox {
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,14 +429,14 @@ body section .plaquette .mealsContainer .meals .choice a .checkBox {
   border-radius: 0px 15px 15px 0px;
   position: absolute;
   height: 68px;
-  width: 15%;
+  width: 16.5%;
   background-color: #99E2D0;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  margin-left: 94%;
+  right: -16.5%;
 }
 
-body section .plaquette .mealsContainer .meals .choice a .checkBox figure {
+body section .plaquette .mealsContainer .meals .choices a .checkBox figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,41 +453,46 @@ body section .plaquette .mealsContainer .meals .choice a .checkBox figure {
           transition-duration: 0.5s;
 }
 
-.choice_1, .choice_2, .choice_3 {
-  -webkit-animation: 0.8s linear;
-          animation: 0.8s linear;
+.set {
+  -webkit-animation: 1.2s linear;
+          animation: 1.2s linear;
 }
 
-.choice_1 {
-  -webkit-animation-name: choice_1;
-          animation-name: choice_1;
+.set_1 {
+  -webkit-animation-name: set_1;
+          animation-name: set_1;
 }
 
-.choice_2 {
-  -webkit-animation-name: choice_2;
-          animation-name: choice_2;
+.set_2 {
+  -webkit-animation-name: set_2;
+          animation-name: set_2;
 }
 
-.choice_3 {
-  -webkit-animation-name: choice_3;
-          animation-name: choice_3;
+.set_3 {
+  -webkit-animation-name: set_3;
+          animation-name: set_3;
+}
+
+.set_4 {
+  -webkit-animation-name: set_4;
+          animation-name: set_4;
 }
 
 /* ============================================================================================================= */
 /* 			----  Anchor Choice Menu : OnHover ---- */
 /* ============================================================================================================= */
-body section .plaquette .mealsContainer .meals .choice a:hover .choiceText,
-body section .plaquette .mealsContainer .meals .choice a:active .choiceText {
+body section .plaquette .mealsContainer .meals .choices a:hover .setText,
+body section .plaquette .mealsContainer .meals .choices a:active .setText {
   width: 63%;
 }
 
-body section .plaquette .mealsContainer .meals .choice a:hover .checkBox,
-body section .plaquette .mealsContainer .meals .choice a:active .checkBox {
-  margin-left: 78%;
+body section .plaquette .mealsContainer .meals .choices a:hover .checkBox,
+body section .plaquette .mealsContainer .meals .choices a:active .checkBox {
+  right: 0%;
 }
 
-body section .plaquette .mealsContainer .meals .choice a:hover .checkBox figure,
-body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure {
+body section .plaquette .mealsContainer .meals .choices a:hover .checkBox figure,
+body section .plaquette .mealsContainer .meals .choices a:active .checkBox figure {
   -webkit-animation: checkBox 0.5s;
           animation: checkBox 0.5s;
 }
@@ -497,30 +521,51 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@-webkit-keyframes choiceMenu {
+@-webkit-keyframes choicesMenu {
   0% {
-    margin-top: 20px;
-    height: 239px;
+    margin-top: 24px;
+    height: 89%;
   }
-  100% {
+  10% {
+    margin-top: 24px;
+    height: 89%;
+  }
+  60% {
+    height: 89%;
+  }
+  70% {
     margin-top: 14px;
-    height: 232px;
+  }
+  100% {
+    height: 86%;
   }
 }
 
-@keyframes choiceMenu {
+@keyframes choicesMenu {
   0% {
-    margin-top: 20px;
-    height: 239px;
+    margin-top: 24px;
+    height: 89%;
   }
-  100% {
+  10% {
+    margin-top: 24px;
+    height: 89%;
+  }
+  60% {
+    height: 89%;
+  }
+  70% {
     margin-top: 14px;
-    height: 232px;
+  }
+  100% {
+    height: 86%;
   }
 }
 
-@-webkit-keyframes choice_1 {
+@-webkit-keyframes set_1 {
   0% {
+    opacity: 0%;
+  }
+  40% {
     opacity: 0%;
   }
   100% {
@@ -528,8 +573,11 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@keyframes choice_1 {
+@keyframes set_1 {
   0% {
+    opacity: 0%;
+  }
+  40% {
     opacity: 0%;
   }
   100% {
@@ -537,11 +585,11 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@-webkit-keyframes choice_2 {
+@-webkit-keyframes set_2 {
   0% {
     opacity: 0%;
   }
-  33% {
+  60% {
     opacity: 0%;
   }
   100% {
@@ -549,11 +597,11 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@keyframes choice_2 {
+@keyframes set_2 {
   0% {
     opacity: 0%;
   }
-  33% {
+  60% {
     opacity: 0%;
   }
   100% {
@@ -561,11 +609,11 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@-webkit-keyframes choice_3 {
+@-webkit-keyframes set_3 {
   0% {
     opacity: 0%;
   }
-  66% {
+  80% {
     opacity: 0%;
   }
   100% {
@@ -573,11 +621,35 @@ body section .plaquette .mealsContainer .meals .choice a:active .checkBox figure
   }
 }
 
-@keyframes choice_3 {
+@keyframes set_3 {
   0% {
     opacity: 0%;
   }
-  66% {
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes set_4 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes set_4 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
     opacity: 0%;
   }
   100% {
