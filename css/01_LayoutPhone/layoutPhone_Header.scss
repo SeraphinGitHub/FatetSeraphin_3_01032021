@@ -16,13 +16,20 @@ body {
 header {
     @include indexAccueil;
     @include flexCenter;
+    position: relative;
     height: 63px;
     color: $textColor_Dark;
+
+    background-color: $body_background;
     
     .arrow {
         @include flexCenter;
-        @include icons(-83%);
+        @include icons(0%);
         @include circleEdges(40px);
+        position: absolute;
+       
+        left: 3%;
+        
         font-size: 130%;
         margin-top: 5px;
         color: black;

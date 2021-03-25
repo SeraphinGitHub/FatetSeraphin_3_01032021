@@ -42,7 +42,8 @@ section {
 		@include radiusCorner(40px, 0px);
 		@include anchor;
 		margin-top: -55px;
-		height: 1160px;
+		height: 1196px;
+
 		background-color: $explore_MediumGrey;
 		
 		.nameResto {
@@ -72,7 +73,7 @@ section {
 		.mealsContainer {
 			@include flexBetween_Y;
 			width: $mealContainerWidth;
-			height: 906px;
+			height: 79%;
 			
 			.meals {
 				@include flexBetween_Y;
@@ -100,7 +101,7 @@ section {
 		}
 
 		.command {
-			@include grad_Button(186px, 45px, 0px);
+			@include grad_Button(186px);
 		}
 
 		.command:hover, .command:active {
@@ -131,7 +132,7 @@ body section .plaquette .mealsContainer .meals .choices a {
 		@include figText(3%);
 		height: $figTextHeight;
 		width: 80%;
-							
+				
 		transition-duration: $checkedSlideDuration;
 							
 		// opacity: 50%;
@@ -204,10 +205,6 @@ body section .plaquette .mealsContainer .meals .choices a {
 
 .set_3 {
 	animation-name: set_3;
-}
-
-.set_4 {
-	animation-name: set_4;
 }
 
 

@@ -1,0 +1,50 @@
+
+@import "../_colors";
+@import "../01_LayoutPhone/layoutPhone_Header";
+
+/* ============================================================================================================= */
+/* 			----  Desktop ---- */
+/* ============================================================================================================= */
+
+$widthBody: 1025px;
+
+@media screen and (min-width: $widthBody) {
+
+	body {
+		background: linear-gradient(to top right, $primaryColor, $secondaryColor);
+	}
+
+	section, header, footer {
+		width: $widthBody;
+	}
+
+	header {
+		border-radius: 90px 90px 0px 0px;
+	}
+
+	footer {
+		border-radius: 0px 0px 63px 63px;
+	}
+	
+	header .arrow {
+		left: 10%;
+	}
+}
+
+
+$widthSection: 822px;
+
+@media screen and (min-width: $widthSection) {
+
+	.fonctionnement .buttons, .restaurants .restoThumbnails {
+		width: $widthSection;
+	}
+
+	@function calc-width($widthPx, $percent) {
+		@return $widthPx * $percent;
+	}
+
+	section .plaquette .mealsContainer {
+		width: calc-width($widthSection, 0.93);
+	}
+}

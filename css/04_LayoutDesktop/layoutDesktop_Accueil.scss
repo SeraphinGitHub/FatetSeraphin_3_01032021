@@ -1,0 +1,33 @@
+
+@import "../_colors";
+
+/* ============================================================================================================= */
+/* 			----  Desktop ---- */
+/* ============================================================================================================= */
+@media screen and (min-width: 1025px) {
+
+	.loading, header, .explore, .fonctionnement, .restaurants, footer {
+		width: 1025px;
+	}
+
+	header {
+		border-radius: 90px 90px 0px 0px;
+	}
+
+	footer {
+		border-radius: 0px 0px 63px 63px;
+	}
+	
+	body {
+		background: linear-gradient(to top right, $primaryColor, $secondaryColor);
+	}
+}
+
+
+
+@media screen and (min-width: 722px) {
+
+	.fonctionnement .buttons, .restaurants .restoThumbnails {
+		width: 822px;
+	}
+}

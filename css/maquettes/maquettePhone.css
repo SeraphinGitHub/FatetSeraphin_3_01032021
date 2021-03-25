@@ -4,6 +4,8 @@
 .maquettePhone_laNoteEnchantee,
 .maquettePhone_aLaFrancaise,
 .maquettePhone_leDeliceDesSens {
+    z-index: 99999;
+
     background-repeat: no-repeat;
     position: absolute;
     display: flex;

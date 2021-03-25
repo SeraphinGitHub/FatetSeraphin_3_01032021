@@ -132,15 +132,14 @@
 }
 
 
-@mixin grad_Button($width, $marginTop, $marginLeft) {
+@mixin grad_Button($width) {
     @include flexCenter;
     @include circleEdges(50px);
     width: $width;
     background: linear-gradient(to bottom right, $secondaryColor, $primaryColor);
     text-decoration: none;
     color: $textColor_Clear;
-    margin-top: $marginTop;
-    margin-left: $marginLeft;
+    margin: 45px;
     
     p {
         @include p_Regular;
@@ -177,36 +176,41 @@
     }
 
     .emptyHeart {
-		z-index: 30;
+		z-index: 10;
 		color: $textColor_Dark;
+        transition-duration: 0.5s;
+        transform: scale(1);
 	}
 					
 	.fullHeart {
-		z-index: 10;
-		color: $primaryColor;
-	}
+		z-index: 20;
+		
+        background: linear-gradient(to bottom, $primaryColor, $secondaryColor);
+		background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        transition-duration: 0.5s;
+        transform: scale(0);
+    }
 				
-	.emptyHeart, .fullHeart, .heartFilter {
+	.emptyHeart, .fullHeart {
 		position: absolute;
 	}
-		
-	.heartFilter {
-		z-index: 20;
 
-        @include flexCenter;
-		border-radius: 50%;
-		height: $heartWidth;
-		width: $heartWidth;
-		background-color: $explore_MediumGrey;
-		// background-color: blue;
-		transition-duration: 1s;
-	}
+    .fas {
+        font-size: 110%;
+    }
 }
 
 @mixin heartOnHover {
-    .heartFilter {
-        transform: rotate(-90deg);
-        transform-origin: -10% 80%;
+    .fullHeart {
+        transform: scale(1);
+    }
+
+    .emptyHeart {
+        transition-duration: 0.5s;
+        transform: scale(0);
     }
 }
 

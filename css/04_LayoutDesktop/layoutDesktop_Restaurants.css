@@ -69,4 +69,35 @@ header .arrow:hover, header .arrow:active {
 header h1 {
   margin-top: 11px;
 }
-/*# sourceMappingURL=layoutPhone_Header.css.map */
+
+/* ============================================================================================================= */
+/* 			----  Desktop ---- */
+/* ============================================================================================================= */
+@media screen and (min-width: 1025px) {
+  body {
+    background: -webkit-gradient(linear, left bottom, right top, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(to top right, #9356DC, #FF79DA);
+  }
+  section, header, footer {
+    width: 1025px;
+  }
+  header {
+    border-radius: 90px 90px 0px 0px;
+  }
+  footer {
+    border-radius: 0px 0px 63px 63px;
+  }
+  header .arrow {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 822px) {
+  .fonctionnement .buttons, .restaurants .restoThumbnails {
+    width: 822px;
+  }
+  section .plaquette .mealsContainer {
+    width: 764.46px;
+  }
+}
+/*# sourceMappingURL=layoutDesktop_Restaurants.css.map */
