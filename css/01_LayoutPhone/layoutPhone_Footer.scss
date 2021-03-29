@@ -19,7 +19,8 @@ footer {
 	justify-content: flex-start;
 	background-color: $footerColor;
 	
-	height:197px;
+	height:auto;
+	padding-bottom: 16px;
 
 	h1 {
 		width: 100%;

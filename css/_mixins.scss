@@ -71,20 +71,40 @@
     height: $height;
 }
 
+@mixin boxShodow($boxShadow_Color) {
+    box-shadow: 5px 5px 5px $boxShadow_Color;
+}
+
 
 @mixin anchor {
     a {
-        box-shadow: 5px 5px 5px lightgray;
+        @include boxShodow($boxShadow_Color_Clear)
     }
 
     a:hover {
-        box-shadow: 5px 5px 5px grey;
+        @include boxShodow( $boxShadow_Color_Medium);
     }
 
     a:active {
-        box-shadow: 5px 5px 5px black;
+        @include boxShodow($boxShadow_Color_Dark);
     }
 }
+
+
+@mixin span {
+    span {
+        @include boxShodow($boxShadow_Color_Clear)
+    }
+
+    span:hover {
+        @include boxShodow( $boxShadow_Color_Medium);
+    }
+
+    span:active {
+        @include boxShodow($boxShadow_Color_Dark);
+    }
+}
+
 
 @mixin radiusCorner($topRad, $botRad) {
     border-radius: $topRad $topRad $botRad $botRad;
@@ -140,6 +160,7 @@
     text-decoration: none;
     color: $textColor_Clear;
     margin: 45px;
+    margin-top: 5px;
     
     p {
         @include p_Regular;

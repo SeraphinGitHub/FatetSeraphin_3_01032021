@@ -17,8 +17,9 @@ body {
 /* ============================================================================================================= */
 .explore {
 	@include indexAccueil;
-	@include flexStart_Y;	
-	height:337px;
+	@include flexStart_Y;
+	height: auto;
+	
 	
 	.location {
 		@include flexStart_Y;
@@ -46,6 +47,7 @@ body {
 		@include anchor;
 		background-color: $explore_ClearGrey;
 		height: 85%;
+		padding-bottom: 18px;
 		
 		h2 {
 			@include booking(38px, -15px);
@@ -57,7 +59,10 @@ body {
 		
 		
 		a {
-			@include grad_Button(220px, 31px, 6px);
+			@include grad_Button(220px);
+			margin-top: 32px;
+			margin-left: 52px;
+			margin-bottom: 55px;
 		}
 
 		a:hover, a:active {
@@ -73,8 +78,9 @@ body {
 /* ============================================================================================================= */
 .fonctionnement {
 	@include indexAccueil;
-	@include flexStart_Y;	
-	height:440px;
+	@include flexStart_Y;
+	height: auto;
+	padding-bottom: 55px;
 
 	background-color: $body_background;
 	
@@ -82,19 +88,19 @@ body {
 		@include flexStart_X;
 		margin-top: 47px;
 		margin-left: 5%;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 	
 	.buttons {
 		@include flexBetween_Y;
 		@include anchor;
-		height: 275px;
+		height: auto;
 		
 		a {
 			@include flexStart_X;
 			@include radiusCorner(20px, 20px);
 			position: relative;
-
+			
 			width: 86%;
 			font-size: 97%;
 			text-decoration: none;
@@ -102,8 +108,8 @@ body {
 			background-color: $explore_ClearGrey;
 			
 			height: 73px;
-			margin-left: 12px;
-			margin-top: 6px;
+			margin: 12px;
+			margin-right: 0px;
 			
 			h4 {
 				@include resetPos;
@@ -148,19 +154,20 @@ body {
 	@include indexAccueil;
 	@include flexStart_Y;
 	background-color: $explore_ClearGrey;
-	height:1226px;
-	
+	height:auto;
+	padding-bottom: 55px;
+
 	h2 {
 		@include flexStart_X;
 		margin-top: 53px;
 		margin-left: 5%;
-		margin-bottom: 23px;
+		margin-bottom: 13px;
 	}
 	
 	.restoThumbnails {
 		@include flexBetween_Y;
 		@include anchor;
-		height: 1058px;
+		height: auto;
 
 		a {
 			@include flexBetween_Y;
@@ -168,7 +175,9 @@ body {
 			position: relative;
 
 			width: 90%;
-			height: 23.5%;
+			height: 250px;
+			margin-top: 10px;
+			margin-bottom: 10px;
 
 			background-color: $resto_Thumbnails;
 			// background-color: lime;

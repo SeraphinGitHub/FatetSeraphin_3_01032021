@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,OAAO,CAAC,UAAU,CAAC;EAClB,MAAM,EAAE,MAAM;CAKd;;AAND,AAGC,OAHM,CAAC,UAAU,CAGjB,eAAe,CAAC;EACZ,MAAM,EAAE,GAAG;CACd",
-    "sources": [
-        "layoutPhone_Restaurants_LaPaletteDuGout.scss"
-    ],
-    "names": [],
-    "file": "layoutPhone_Restaurants_LaPaletteDuGout.css"
-}

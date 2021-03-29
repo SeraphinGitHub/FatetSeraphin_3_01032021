@@ -30,7 +30,7 @@ body {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   width: 100%;
-  height: 337px;
+  height: auto;
 }
 
 .explore .location {
@@ -92,11 +92,12 @@ body {
   width: 100%;
   background-color: whitesmoke;
   height: 85%;
+  padding-bottom: 18px;
 }
 
 .explore .booking a {
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+          box-shadow: 5px 5px 5px lightgrey;
 }
 
 .explore .booking a:hover {
@@ -145,8 +146,11 @@ body {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   text-decoration: none;
   color: white;
-  margin-top: 31px;
-  margin-left: 6px;
+  margin: 45px;
+  margin-top: 5px;
+  margin-top: 32px;
+  margin-left: 52px;
+  margin-bottom: 55px;
 }
 
 .explore .booking a p {
@@ -179,7 +183,8 @@ body {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   width: 100%;
-  height: 440px;
+  height: auto;
+  padding-bottom: 55px;
   background-color: white;
 }
 
@@ -200,7 +205,7 @@ body {
   width: 100%;
   margin-top: 47px;
   margin-left: 5%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .fonctionnement .buttons {
@@ -215,12 +220,12 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   width: 100%;
-  height: 275px;
+  height: auto;
 }
 
 .fonctionnement .buttons a {
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+          box-shadow: 5px 5px 5px lightgrey;
 }
 
 .fonctionnement .buttons a:hover {
@@ -256,8 +261,8 @@ body {
   color: black;
   background-color: whitesmoke;
   height: 73px;
-  margin-left: 12px;
-  margin-top: 6px;
+  margin: 12px;
+  margin-right: 0px;
 }
 
 .fonctionnement .buttons a h4 {
@@ -326,7 +331,8 @@ body {
       align-content: flex-start;
   width: 100%;
   background-color: whitesmoke;
-  height: 1226px;
+  height: auto;
+  padding-bottom: 55px;
 }
 
 .restaurants h2 {
@@ -346,7 +352,7 @@ body {
   width: 100%;
   margin-top: 53px;
   margin-left: 5%;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
 }
 
 .restaurants .restoThumbnails {
@@ -361,12 +367,12 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   width: 100%;
-  height: 1058px;
+  height: auto;
 }
 
 .restaurants .restoThumbnails a {
-  -webkit-box-shadow: 5px 5px 5px lightgray;
-          box-shadow: 5px 5px 5px lightgray;
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+          box-shadow: 5px 5px 5px lightgrey;
 }
 
 .restaurants .restoThumbnails a:hover {
@@ -394,7 +400,9 @@ body {
   border-radius: 15px 15px 15px 15px;
   position: relative;
   width: 90%;
-  height: 23.5%;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: white;
 }
 
