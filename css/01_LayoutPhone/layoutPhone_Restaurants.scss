@@ -40,6 +40,7 @@ section {
 		@include flexStart_Y;
 		@include radiusCorner(40px, 0px);
 		@include span;
+		@include anchor;
 		height: auto;
 		margin-top: -55px;
 		padding-bottom: 12px;
@@ -252,17 +253,14 @@ $fadeOut_Duration_Base: 0.5s; // <<<  First Child - Opacity Timer
 @keyframes fadeOut {
 	0% {
 		opacity: 0%;
-		margin-top: 30px;
 	}
 
 	30% {
 		opacity: 0%;
-		margin-top: 30px;
 	}
 
 	100% {
 		opacity: 100%;
-		margin-top: 6px;
 	}
 }
 

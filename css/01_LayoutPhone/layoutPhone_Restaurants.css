@@ -79,6 +79,21 @@ section .plaquette span:active {
           box-shadow: 5px 5px 5px black;
 }
 
+section .plaquette a {
+  -webkit-box-shadow: 5px 5px 5px lightgrey;
+          box-shadow: 5px 5px 5px lightgrey;
+}
+
+section .plaquette a:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+section .plaquette a:active {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
 section .plaquette .nameResto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,30 +537,24 @@ section .plaquette .command:hover, section .plaquette .command:active {
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 0%;
-    margin-top: 30px;
   }
   30% {
     opacity: 0%;
-    margin-top: 30px;
   }
   100% {
     opacity: 100%;
-    margin-top: 6px;
   }
 }
 
 @keyframes fadeOut {
   0% {
     opacity: 0%;
-    margin-top: 30px;
   }
   30% {
     opacity: 0%;
-    margin-top: 30px;
   }
   100% {
     opacity: 100%;
-    margin-top: 6px;
   }
 }
 /*# sourceMappingURL=layoutPhone_Restaurants.css.map */
